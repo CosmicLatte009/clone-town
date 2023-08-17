@@ -1,0 +1,12 @@
+//font-family용 변수
+$laila: 'Laila', sans-serif;
+$IBM: 'IBMPlexSans-Regular';
+$NotoSans: 'Noto Sans KR', 'sans-serif';
+
+//해당 믹스인 쓰는 방법 예시 @include font()
+@mixin font($font-family, $font-weight, $font-size, $line-height) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}

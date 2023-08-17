@@ -1,0 +1,13 @@
+@import './font';
+@import './color';
+
+body {
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    border-radius: 30px;
+  }
+}
