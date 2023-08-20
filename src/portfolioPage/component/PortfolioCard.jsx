@@ -2,12 +2,13 @@ import styles from './PortfolioCard.module.scss';
 
 const PortfolioCard = ({ portfolioData }) => {
   const data = portfolioData.data[0].detail;
+  console.log(process.env.PUBLIC_URL + data.img);
 
   return (
     <>
       <div className={styles.container}>
         <div className={styles.company_imgWrapper}>
-          <img src={data.img} />
+          <img src={process.env.PUBLIC_URL + data.img} />
         </div>
         <div className={styles.company_content}>
           <ul>

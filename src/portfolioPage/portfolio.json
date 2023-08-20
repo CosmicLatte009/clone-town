@@ -3,7 +3,7 @@
     {
       "category": ["WEB", "MALL"],
       "detail": {
-        "img": "./img/company/hi_print.png",
+        "img": "/assets/img/portfolioPage/company/hi_print.png",
         "Summary": "인쇄 초보도 쉽게 하는 인쇄",
         "name": "하이프린트",
         "color": ["#f6ac0f", "#221715", "#888781"],
@@ -14,7 +14,7 @@
     {
       "category": ["WEB"],
       "detail": {
-        "img": "./img/company/sogongja.png",
+        "img": "/assets/img/portfolioPage/company/sogongja.png",
         "Summary": "소상공인 상권분석 플랫폼",
         "name": "소공자",
         "color": ["#003469", "#011a1d", "#003b41"],
@@ -25,7 +25,7 @@
     {
       "category": ["WEB", "MALL"],
       "detail": {
-        "img": "./img/company/tao_baro.png",
+        "img": "/assets/img/portfolioPage/company/tao_baro.png",
         "Summary": "타오바오 직구대행 쇼핑몰",
         "name": "타오바오",
         "color": ["#FF5F00", "#f8f8f8"],
@@ -36,7 +36,7 @@
     {
       "category": ["MALL", "APP"],
       "detail": {
-        "img": "./img/company/line_way.jpg",
+        "img": "img/company/line_way.jpg",
         "Summary": "동영상 기반 뷰티 쇼핑몰",
         "name": "라인웨이",
         "color": ["#52EC8A", "#59626A", "#FFF"],
@@ -47,7 +47,7 @@
     {
       "category": ["APP"],
       "detail": {
-        "img": "./img/company/che_duler.png",
+        "img": "/assets/img/portfolioPage/company/che_duler.png",
         "Summary": "일잘러들을 위한 스마트 스케줄러",
         "name": "케:줄러",
         "color": ["#fad94f", "#6d4be5"],
@@ -58,7 +58,7 @@
     {
       "category": ["APP"],
       "detail": {
-        "img": "./img/company/love_schemar.jpg",
+        "img": "/assets/img/portfolioPage/company/love_schemar.jpg",
         "Summary": "",
         "name": "러브스캐머 스캐너",
         "color": ["#1682CB", "#DC473A", "#FFF"],
@@ -75,7 +75,7 @@
     {
       "category": ["IoT"],
       "detail": {
-        "img": "./img/company/ozrp.png",
+        "img": "/assets/img/portfolioPage/company/ozrp.png",
         "Summary": "",
         "name": "오지랖",
         "color": ["#3E22F5", "#fff"],
@@ -93,7 +93,7 @@
     {
       "category": ["IoT"],
       "detail": {
-        "img": "./img/company/nirvana.jpg",
+        "img": "/assets/img/portfolioPage/company/nirvana.jpg",
         "Summary": "특허받은 세계 최초 귀마사지기",
         "name": "NIRVANA 니르바나",
         "color": ["#1F2322", "#A4745F", "#F6C7B8"],
@@ -104,7 +104,7 @@
     {
       "category": ["Etc"],
       "detail": {
-        "img": "./img/company/weltech.jpg",
+        "img": "/assets/img/portfolioPage/company/weltech.jpg",
         "Summary": "국내 최초 전자빔용접 서비스",
         "name": "weltech",
         "color": ["#BF000D", "#C4CCD4", "#FDFDFD"],
@@ -115,7 +115,7 @@
     {
       "category": ["Etc"],
       "detail": {
-        "img": "./img/company/FNB_Protocol.png",
+        "img": "/assets/img/portfolioPage/company/FNB_Protocol.png",
         "Summary": "소상공인 창업자들을 위한 코인",
         "name": "FNB Protocol",
         "color": ["#511A55", "#2C3961", "#87FFC0"],
