@@ -1,6 +1,6 @@
 import styles from './aboutpage.module.scss';
 import AboutSection from './components/about-section/AboutSection';
-// import IntroductionSection from './components/introduction-section/IntroductionSection';
+import IntroductionSection from './components/introduction-section/IntroductionSection';
 // import MissionSection from './components/mission-section/Mission';
 // import OrganizationSection from './components/organization-section/OranizationSection';
 // import ValueSection from './components/value-section/ValueSection';
@@ -11,14 +11,14 @@ const AboutPage = () => {
   return (
     <section className={styles.AboutSection}>
       <AboutSection />
-      {/* <section className={styles.CompanySection}>
+      <section className={styles.CompanySection}>
         <IntroductionSection />
-        <MissionSection />
+        {/* <MissionSection />
         <VisionSection />
         <ValueSection />
         <OrganizationSection />
-        <VisitSection />
-      </section> */}
+        <VisitSection /> */}
+      </section>
     </section>
   );
 };
