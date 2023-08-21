@@ -1,6 +1,7 @@
 import styles from './aboutpage.module.scss';
 import AboutSection from './components/about-section/AboutSection';
 import IntroductionSection from './components/introduction-section/IntroductionSection';
+import MissionSection from './components/mission-section/MissionSection';
 
 const AboutPage = () => {
   return (
@@ -8,6 +9,7 @@ const AboutPage = () => {
       <AboutSection />
       <section className={styles.CompanySection}>
         <IntroductionSection />
+        <MissionSection />
       </section>
     </section>
   );
