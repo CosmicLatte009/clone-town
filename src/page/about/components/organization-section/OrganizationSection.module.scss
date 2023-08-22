@@ -1,0 +1,88 @@
+.OrganizationSection{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 180px;
+}
+
+.Title{
+    margin-top: 15%;
+    margin-bottom: 8%;
+    font-weight: bolder;
+    font-family: "Laila", sans-serif;
+    text-align: center;
+    color: #dc6868;
+    font-size: 5rem;
+}
+
+.OrganizationIn{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.SubTitle{
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    color: #dc6868;
+    margin-bottom: 60px;
+    line-height: 1;
+}
+
+.OrgImg{
+    width: 100%;
+    margin-left: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .Title{
+        font-size: 3.2rem;
+    }
+    .OrganizationIn{
+        width: 90%;
+    }
+    .SubTitle{
+        font-size: 1.8rem;
+    }
+    .OrgImg{
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .Title{
+        font-size: 3.6rem;
+        font-weight: bold;
+        margin-bottom: 60px;
+        margin-top: 12%;
+    }
+    .OrganizationIn{
+        width: 450px;
+    }
+    .SubTitle{
+        font-size: 2rem;
+    }
+    .OrgImg{
+        margin-left: 0;
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .OrganizationIn{
+        width: 600px;
+    }
+    .SubTitle{
+        font-size: 2rem;
+    }
+    .OrgImg{
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px){
+    .OrganizationIn{
+        width: 900px;
+    }
+    .OrgImg{
+        margin-left: 0;
+    }
+}

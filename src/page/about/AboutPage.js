@@ -4,6 +4,7 @@ import IntroductionSection from './components/introduction-section/IntroductionS
 import MissionSection from './components/mission-section/MissionSection';
 import VisionSection from './components/vision-section/VisionSection';
 import ValueSection from './components/value-section/ValueSection';
+import OrganizationSection from './components/organization-section/OranizationSection';
 
 const AboutPage = () => {
   return (
@@ -14,6 +15,7 @@ const AboutPage = () => {
         <MissionSection />
         <VisionSection />
         <ValueSection />
+        <OrganizationSection />
       </section>
     </section>
   );
