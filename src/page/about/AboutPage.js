@@ -3,6 +3,7 @@ import AboutSection from './components/about-section/AboutSection';
 import IntroductionSection from './components/introduction-section/IntroductionSection';
 import MissionSection from './components/mission-section/MissionSection';
 
+
 const AboutPage = () => {
   return (
     <section className={styles.AboutSection}>
