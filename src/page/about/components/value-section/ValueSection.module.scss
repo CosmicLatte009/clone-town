@@ -1,0 +1,94 @@
+.ValueSection{
+    background: url('../../../../../public/assets/img/about_rc/about_background2.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.Title{
+    margin-top: 15%;
+    margin-bottom: 8%;
+    font-weight: bolder;
+    font-family: "Laila", sans-serif;
+    text-align: center;
+    color: #dc6868;
+    font-size: 5rem;
+}
+
+.ValueIn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 80%;
+    margin: 80px auto 0;
+    height: 100%;
+}
+
+.ValueBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .ValueSection {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .Title{
+        font-size: 3.2rem;
+    }
+    .ValueIn{
+        flex-direction: column;
+    }
+    .ValueBox{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .ValueSection{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .Title{
+        font-size: 3.6rem;
+        font-weight: bold;
+        margin-bottom: 60px;
+        margin-top: 12%;
+    }
+    .ValueIn{
+        flex-direction: column;
+    }
+    .ValueBox{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .ValueSection{
+        width: 100%;
+    }
+    .ValueIn{
+        flex-direction: column;
+    }
+    .ValueBox{
+        flex-direction: column;
+    }
+}
+    
+@media (min-width: 1025px) and (max-width: 1400px){
+    .ValueSection{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ValueIn{
+        flex-direction: column;
+    }
+}
