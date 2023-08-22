@@ -1,41 +1,61 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from './portfolioPage.module.scss';
 import PortfolioCard from './component/PortfolioCard';
+import ALLData from './portfolioData/portfolioALL.json';
 
-const PortfolioList = () => {
-  const [category, setCategory] = useState('All');
-  const [data, setData] = useState(portfolioData.data);
+// import WEBData from './portfolioData/portfolioWeb.json';
+// import MALLData from './portfolioData/portfolioMall.json';
+// import APPData from './portfolioData/portfolioApp.json';
+// import IoTData from './portfolioData/portfolioIot.json';
+// import EtcData from './portfolioData/portfolioEtc.json';
 
-  console.log('data', data);
-  console.log('data.category', data[0].category);
+const CATEGORY = ['ALL', 'WEB', 'MALL', 'APP', 'IoT', 'Etc'];
 
-  const clickTabHandler = () => {};
+const PortfolioBox = () => {
+  const [category, setCategory] = useState('ALL');
+  const [data, setData] = useState(ALLData);
 
-  //첫 로딩시(카테고리가 All일 경우) 모든 카테고리를 보여줌
-  //이후 카테고리가 바뀔 때 마다
-  //map을 돌면서 각 인덱스의 카테고리 확인
-  //해당하는 카테고리의 detail을 새 배열에 저장
-  //detail만 저장된 새 배열을 data에 다시 세팅
+  async function fetchData(category) {
+    const response = await fetch(
+      `/assets/dummy/portfolioData/portfolio${category}.json`,
+    );
+    const data = await response.json();
+    console.log(data);
+
+    setData(data);
+  }
+
+  const selectCategoryHandler = (e) => {
+    const selectCategory = e.target.value;
+    setCategory(selectCategory);
+  };
+
+  useEffect(() => {
+    fetchData(category);
+  }, [category]);
 
   return (
     <>
       <div className={styles.portfolio_tap}>
         <ul>
-          <li>ALL</li>
-          <li>WEB</li>
-          <li>MALL</li>
-          <li>APP</li>
-          <li>IoT</li>
-          <li>Etc</li>
+          {CATEGORY.map((item, index) => {
+            return (
+              <li key={'TabLi' + index}>
+                <button onClick={selectCategoryHandler} value={item}>
+                  {item}
+                </button>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
-      <div className={styles.portfolio_list}>
+      {/* <div className={styles.portfolio_list}>
         {data.map((data, index) => {
           return <PortfolioCard portfolioData={data} index={index} />;
         })}
-      </div>
+      </div> */}
     </>
   );
 };
@@ -43,7 +63,7 @@ const PortfolioList = () => {
 const PortfolioPage = () => {
   return (
     <>
-      <PortfolioList />
+      <PortfolioBox />
     </>
   );
 };
