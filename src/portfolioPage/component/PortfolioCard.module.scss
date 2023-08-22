@@ -1,3 +1,5 @@
+@import '../../style/color';
+
 div {
   margin: 0;
   padding: 0;
@@ -8,95 +10,136 @@ div {
 }
 
 .container {
-  display: flex;
-  width: 80%;
-  height: 300px;
-  padding: 20px;
-  margin: 0 auto 10%;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.company_imgWrapper {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.company_content {
-  width: 60%;
-  height: 100%;
+  padding: 0 8%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px 30px;
 
-  & ul {
-    width: 100%;
-    height: 100%;
+  .portWarpper {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
 
-    & li {
-      & p {
-        font-size: 1em;
-      }
+    .port1 {
+      background: #ffebe1;
+    }
+    .port2 {
+      background: #f9f9f9;
+    }
 
-      & h5 {
-        font-size: 2.4rem;
-        font-weight: bold;
-      }
+    .port1,
+    .port2 {
+      display: flex;
+      width: 90%;
+      height: 300px;
+      padding: 20px;
+      margin: 5% 5%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 
-      & .company_colorBox {
-        display: flex;
-        justify-content: space-between;
+      .company_imgWrapper {
+        width: 40%;
+        height: 100%;
 
-        & .company_colorPalette {
-          display: flex;
+        .company_Img {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
 
-          & span {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            margin: 0 3px;
-            border: 1px solid #e0e8ff;
+          img {
+            // position: absolute;
+            max-height: 100%;
+            top: 50%;
+            left: 50%;
+            // transform: translate(-50%, -50%);
           }
         }
       }
-    }
-  }
-}
 
-.company_tagWrapper {
-  width: 100%;
-  padding: 0 1%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-wrap: wrap-reverse;
-}
+      .company_contentWrapper {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 30px;
 
-.company_tag {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
+        ul {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
 
-  & ul {
-    width: 100%;
-    padding: 0 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-wrap: wrap-reverse;
+          li:nth-child(2) {
+            margin: 5px 0 30px;
+          }
 
-    & li {
-      margin: 5px 10px;
-      font-weight: bold;
-      font-size: 1.4rem;
-      color: #dc6868;
+          li {
+            margin: 10px 0;
+            p {
+              font-size: 1.6rem;
+            }
+
+            h5 {
+              font-size: 2.4rem;
+              font-weight: bold;
+            }
+
+            .company_colorBox {
+              display: flex;
+              justify-content: space-between;
+              p {
+                line-height: 20px;
+                font-size: 1.6rem;
+                margin-right: 15px;
+              }
+
+              .company_colorPalette {
+                display: flex;
+                span {
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  margin: 0 3px;
+                }
+              }
+            }
+          }
+        }
+
+        .company_tagWrapper {
+          width: 100%;
+          padding: 0 1%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-end;
+          flex-wrap: wrap-reverse;
+
+          .company_tag {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            ul {
+              width: 100%;
+              padding: 0 1%;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-end;
+              align-items: flex-end;
+              flex-wrap: wrap-reverse;
+
+              li {
+                margin: 5px 10px;
+                font-weight: bold;
+                font-size: 1.4rem;
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "img": "/assets/img/portfolioPage/company/weltech.jpg",
+      "Summary": "국내 최초 전자빔용접 서비스",
+      "name": "weltech",
+      "color": ["#BF000D", "#C4CCD4", "#FDFDFD"],
+      "url": "http://www.weltech.co.kr/_index.html",
+      "tag": ["전자빔용접", "홈페이지", "기업", "용접"]
+    },
+    {
+      "img": "/assets/img/portfolioPage/company/FNB_Protocol.png",
+      "Summary": "소상공인 창업자들을 위한 코인",
+      "name": "FNB Protocol",
+      "color": ["#511A55", "#2C3961", "#87FFC0"],
+      "url": "https://www.fnbprotocol.io/fnb/index_eng.php",
+      "tag": ["기업소개", "서비스", "가상화폐"]
+    }
+  ]
+}
