@@ -1,0 +1,142 @@
+@import '../../style/color';
+
+.requestContainer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 6% 2% 0;
+  width: 100%;
+  height: 100%;
+
+  .request {
+    display: block;
+    padding: 3% 2%;
+    width: 100%;
+    height: 110%;
+
+    .requestTop {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      li {
+        margin: 10px 0;
+        padding: 10px 0;
+        font-size: 1.6rem;
+        img {
+          width: 100px;
+          margin-top: 20px;
+        }
+        p {
+          padding: 0;
+          border: 0;
+          font: inherit;
+          line-height: 1.4;
+          vertical-align: baseline;
+          text-align: center;
+          font-size: 1.4rem;
+          line-height: 20px;
+        }
+        .title {
+          font-size: 3.2rem;
+          color: #333;
+          font-weight: bold;
+          font-family: 'Laila', sans-serif;
+          padding: 0 10px;
+          border-bottom: 3px solid #888;
+        }
+      }
+      .request_text {
+        text-indent: 10px;
+        color: #666;
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin: 10px 0;
+
+        .required_mark {
+          display: block;
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          left: 0;
+          top: 0;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+
+  .input_list {
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 0 30px;
+      li {
+        width: 45%;
+        label {
+          display: block;
+          line-height: normal;
+          cursor: pointer;
+          font-size: 1.4rem;
+          font-weight: bold;
+
+          .request_input {
+            display: block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            left: 0;
+            top: 0;
+            background-color: $main-color;
+          }
+        }
+        .request_input::placeholder {
+          color: #b6b6b6;
+          font-weight: normal;
+        }
+        .request_input:focus {
+          border-bottom: 2px solid $main-color !important;
+          outline: none;
+          transition: all 0.5s;
+        }
+        .request_input[type='text'],
+        .request_input[type='email'],
+        .request_input[type='url'] {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 2px solid #666;
+          color: #666;
+          font-size: 1.4rem;
+          font-weight: bold;
+
+          width: 100%;
+          height: 35px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.request_input {
+  margin: 0em;
+  padding: 1px 2px;
+  border: none;
+  border-bottom: rgb(118, 118, 118) 1px solid;
+}
+.request_input:focus {
+  outline: none;
+}
