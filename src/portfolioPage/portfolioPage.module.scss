@@ -1,0 +1,42 @@
+@import '../style/color';
+
+.portfolio {
+  margin-bottom: 150px;
+  overflow: hidden;
+
+  h2.portfolio_title {
+    margin: 7% 1%;
+    font-weight: bolder;
+    font-family: 'Laila', sans-serif;
+    text-align: center;
+    color: $main-color;
+    font-size: 5rem;
+  }
+  .portfolio_tap {
+    width: 100%;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: 100px auto;
+
+      li {
+        margin: 0 40px;
+        span {
+          button {
+            color: #a7a7a7;
+            font-weight: bold;
+            font-size: 2.4rem;
+            background-color: white;
+          }
+          .btn_selected {
+            color: $main-color;
+            border-bottom: 3px solid $main-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ div {
   font: inherit;
   line-height: 1.4;
   vertical-align: baseline;
+  overflow: hidden;
 }
 
 .container {
@@ -28,11 +29,17 @@ div {
 
     .port1,
     .port2 {
+      // display: flex;
+      // width: 90%;
+      // height: 300px;
+      // padding: 20px;
+      // margin: 5% 5%;
+      // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
       display: flex;
-      width: 90%;
+      width: 80%;
       height: 300px;
       padding: 20px;
-      margin: 5% 5%;
+      margin: 0 auto 10%;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 
       .company_imgWrapper {
