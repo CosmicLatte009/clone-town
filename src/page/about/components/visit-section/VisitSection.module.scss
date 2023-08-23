@@ -1,0 +1,151 @@
+.Title{
+    margin-top: 15%;
+    margin-bottom: 5%;
+
+    font-weight: bolder;
+    font-family: "Laila", sans-serif;
+    text-align: center;
+    color: #dc6868;
+    font-size: 5rem;
+}
+
+.VisitIn{
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.VisitInfo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.VisitAddress{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.VisitTitle{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.VisitAddress>div, .VisitContact>div{
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.VisitText{
+    line-height: 1.2;
+}
+
+.VisitText>span{
+    font-weight: bold;
+}
+
+.VisitContact{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.VisitContact>div{
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.VisitContact>div p{
+    line-height: 1.2;
+}
+
+.VisitRight{
+    display: flex;
+    width: 180px;
+    height: 50px;
+    border: 2px solid #dc6868;
+    margin-bottom: 20px;
+}
+
+.VisitRight>a{
+    display: block;
+    color: #dc6868;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 46px;
+    padding: 0 20px;
+
+    text-decoration: none;
+    outline: none;
+}
+
+.VisitRight>span{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #dc6868;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VisitRight>span img{
+    width: 50%;
+    height: 50%;
+}
+
+.Map{
+    overflow: hidden;
+    background: url(https://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);
+    width: 75%;
+    height: 600px;
+    margin: 50px 15% 50px 10%;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .Title{
+        margin-bottom: 10%;
+        font-size: 3.2rem;
+    }
+    .VisitInfo{
+        display: block;
+    }
+    .VisitTitle{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .VisitAddress>div, .VisitContact>div{
+        margin-bottom: 30px;
+    }
+    .VisitContact>div{
+        margin-bottom: 30px;
+    }
+    .VisitRight{
+        margin-bottom: 0;
+    }
+    .Map{
+        width: 80%;
+        margin: 50px 10% 50px 10%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .Title{
+        margin-bottom: 10%;
+        font-size: 3.6rem;
+        font-weight: bold;
+    }
+    .VisitInfo{
+        display: block;
+    }
+    .VisitRight{
+        margin-top: 60px;
+    }
+    .Map{
+        width: 80%;
+        margin: 50px 10% 50px 10%;
+    }
+}
