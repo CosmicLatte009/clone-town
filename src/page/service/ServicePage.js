@@ -2,6 +2,7 @@ import styles from './ServicePage.module.scss';
 import ServiceSection from './components/service-section/ServiceSection';
 import WebSection from './components/web-section/WebSection';
 import AppSection from './components/app-section/AppSection';
+import MaintenanceSection from './components/mtn-section/MaintenanceSection';
 
 const ServicePage = () => {
   return (
@@ -9,6 +10,7 @@ const ServicePage = () => {
       <ServiceSection />
       <WebSection />
       <AppSection />
+      <MaintenanceSection />
     </section>
   );
 };
