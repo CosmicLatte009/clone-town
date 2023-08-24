@@ -1,6 +1,13 @@
 @import './font';
 @import './color';
 
+html{
+  overflow-x: hidden;
+    font-size: 10px;
+    font-family: 'IBMPlexSansKR-Regular';
+    color: #222222;
+}
+
 body {
   box-sizing: border-box;
   &::-webkit-scrollbar {

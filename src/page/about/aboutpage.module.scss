@@ -1,0 +1,32 @@
+*{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.AboutSection{
+    overflow-x: hidden;
+    font-size: 10px;
+    font-family: 'IBMPlexSansKR-Regular';
+    color: #222222;
+    word-break: keep-all;
+    line-height: 1;
+}
+
+.CompanySection{
+    position: relative;
+    left: 80px;
+    font-size: 1.6rem;
+    width: calc(100% - 80px);
+    padding-bottom: 150px;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .CompanySection{
+        left: 0 !important;
+        width: 100% !important;
+        height: 100%;
+        font-size: 1.6rem;
+    }
+}
