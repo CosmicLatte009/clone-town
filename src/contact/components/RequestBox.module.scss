@@ -9,10 +9,17 @@
   height: 100%;
 
   .request {
-    display: block;
-    padding: 3% 2%;
+    // display: block;
+    // padding: 3% 2%;
+    // width: 100%;
+    // height: 110%;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 6% 2% 0;
     width: 100%;
-    height: 110%;
+    height: 100%;
 
     .requestTop {
       width: 25%;
@@ -69,74 +76,228 @@
   }
 
   .input_list {
-    width: 100%;
-    height: 100%;
-    padding: 40px 20px 30px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px 30px;
 
     ul {
       display: flex;
       justify-content: space-between;
       width: 90%;
       margin: 0 0 30px;
-      li {
-        width: 45%;
-        label {
+    }
+    li {
+      label {
+        display: block;
+        line-height: normal;
+        cursor: pointer;
+        font-size: 1.4rem;
+        font-weight: bold;
+
+        .request_input {
           display: block;
-          line-height: normal;
-          cursor: pointer;
-          font-size: 1.4rem;
-          font-weight: bold;
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          left: 0;
+          top: 0;
+          background-color: $main-color;
+        }
+      }
+      .request_input::placeholder {
+        color: #b6b6b6;
+        font-weight: normal;
+      }
+      .request_input:focus {
+        border-bottom: 2px solid $main-color !important;
+        outline: none;
+        transition: all 0.5s;
+      }
+      .request_input[type='text'],
+      .request_input[type='email'],
+      .request_input[type='url'] {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #666;
+        color: #666;
+        font-size: 1.4rem;
+        font-weight: bold;
 
-          .request_input {
-            display: block;
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            left: 0;
-            top: 0;
-            background-color: $main-color;
-          }
-        }
-        .request_input::placeholder {
-          color: #b6b6b6;
-          font-weight: normal;
-        }
-        .request_input:focus {
-          border-bottom: 2px solid $main-color !important;
-          outline: none;
-          transition: all 0.5s;
-        }
-        .request_input[type='text'],
-        .request_input[type='email'],
-        .request_input[type='url'] {
-          border-top: none;
-          border-left: none;
-          border-right: none;
-          border-bottom: 2px solid #666;
-          color: #666;
-          font-size: 1.4rem;
-          font-weight: bold;
-
-          width: 100%;
-          height: 35px;
-          padding: 0 10px;
-        }
+        width: 100%;
+        height: 35px;
+        padding: 0 10px;
       }
     }
   }
 }
 
 .request_input {
-  margin: 0em;
-  padding: 1px 2px;
-  border: none;
-  border-bottom: rgb(118, 118, 118) 1px solid;
+  border-bottom: 2px solid #a7a7a7;
+  color: #b6b6b6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
 }
 .request_input:focus {
   outline: none;
+}
+
+.requestRight {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.upload {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  li {
+    padding: 0;
+    margin: 20px 0;
+
+    &:first-child {
+      display: flex;
+    }
+    & > li:last-child {
+      display: flex;
+    }
+    & > li {
+      display: flex;
+    }
+    & > li:first-child {
+      label {
+        width: 120px;
+        padding-left: 10px;
+      }
+    }
+
+    textarea {
+      padding: 10px 10px;
+      &::placeholder {
+        color: #b6b6b6;
+        font-weight: normal;
+      }
+    }
+    .project_nameLabel {
+      width: 120px;
+      padding-left: 10px;
+    }
+    .project_name {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      color: #b6b6b6;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border-bottom: 2px solid #a7a7a7;
+      width: 100%;
+      height: 40px;
+      padding: 0 10px;
+    }
+    .project_detailLabel {
+      display: block;
+      font-size: 1.4rem;
+      cursor: pointer;
+      width: 100%;
+    }
+    .text_area:focus {
+      border-bottom: 2px solid $main-color;
+    }
+    .text_area {
+      resize: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #a7a7a7;
+      outline: none;
+      color: #b6b6b6;
+      font-size: 1.4rem;
+      font-weight: bold;
+      font-family: inherit;
+      width: 100%;
+    }
+    .project_file {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      color: #b6b6b6;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border-bottom: 2px solid #a7a7a7;
+      width: 100%;
+      height: 40px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.request_policyIn {
+  .checkBox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    left: 0;
+    top: 2px;
+    background-color: #eaeaea;
+    border-radius: 2px;
+  }
+  label {
+    cursor: pointer;
+    padding-left: 30px;
+    color: #333;
+    a {
+      font-weight: bold;
+      color: #333;
+    }
+  }
+}
+
+.request_policy {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 90%;
+  height: 100px;
+  text-align: center;
+}
+
+.policyBtn {
+  margin-top: 20px;
+  border: 2px solid $main-color;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: $main-color;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.file_input_div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  right: 20px;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 2.4rem;
+    color: #dc6868;
+    cursor: pointer;
+  }
 }
