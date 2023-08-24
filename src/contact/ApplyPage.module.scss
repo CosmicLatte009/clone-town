@@ -1,10 +1,10 @@
 .container {
+  display: flex;
   left: 80px;
   font-size: 1.6rem;
   width: calc(100% - 80px);
   height: 100vh;
-  display: flex;
-  .requestBody {
+  .applytBody {
     display: flex;
     align-items: center;
     justify-content: space-arousd;
