@@ -2,33 +2,71 @@ import styles from './ApplyBox.module.scss';
 
 const ApplyBox = () => {
   return (
-    <>
-      <div className={styles.applyContainer}>
-        <ul className={styles.apply}>
-          <div className={styles.applyTop}>
-            <li>
-              <span className={styles.title}>APPLY</span>
-            </li>
-            <li>
-              <p>
-                알씨타운과 함께 할
-                <br />
-                소중한 인재를 찾고 있습니다
-              </p>
-            </li>
-            <li>
-              <img
-                src="http://localhost:3000/assets/img/recruit_pink.png"
-                alt="문의하기 아이콘"
-                s
-              />
-            </li>
-            <li className={styles.apply_text}>
-              <span className={styles.apply_mark}></span>
-              필수 입력사항입니다.
-            </li>
+    <div className={styles.applyContainer}>
+      <ul className={styles.apply}>
+        <div className={styles.applyTop}>
+          <li>
+            <span className={styles.title}>APPLY</span>
+          </li>
+          <li>
+            <p>
+              알씨타운과 함께 할
+              <br />
+              소중한 인재를 찾고 있습니다
+            </p>
+          </li>
+          <li>
+            <img
+              src="http://localhost:3000/assets/img/recruit_pink.png"
+              alt="문의하기 아이콘"
+              s
+            />
+          </li>
+          <li className={styles.apply_text}>
+            <span className={styles.apply_mark}></span>
+            필수 입력사항입니다.
+          </li>
+        </div>
+        <div className={styles.applyRight}>
+          <div className={styles.select_option}>
+            <div className={styles.select_option_in}>
+              <ul>
+                <li>
+                  <input type="checkbox" className={styles.option_check} />
+                  <label>기획자</label>
+                </li>
+                <li>
+                  <input type="checkbox" className={styles.option_check} />
+                  <label>프론트엔드</label>
+                </li>
+                <li>
+                  <input type="checkbox" className={styles.option_check} />
+                  <label>백엔드</label>
+                </li>
+                <li>
+                  <input type="checkbox" className={styles.option_check} />
+                  <label>디자이너</label>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className={styles.applyRight}>
+          <div className={styles.careerBox}>
+            <div className={styles.careerBox_in}>
+              <ul>
+                <li>
+                  <input type="checkbox" className={styles.career_check} />
+                  <label>신입</label>
+                </li>
+                <li>
+                  <input type="checkbox" className={styles.option_check} />
+                  <label>
+                    경력<input className={styles.careerBox_input}></input>년
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.apply_form}>
             <div className={styles.applyBottom}>
               <div className={styles.input_list}>
                 <ul>
@@ -130,9 +168,9 @@ const ApplyBox = () => {
               </button>
             </div>
           </div>
-        </ul>
-      </div>
-    </>
+        </div>
+      </ul>
+    </div>
   );
 };
 
