@@ -3,6 +3,7 @@ import ServiceSection from './components/service-section/ServiceSection';
 import WebSection from './components/web-section/WebSection';
 import AppSection from './components/app-section/AppSection';
 import MaintenanceSection from './components/mtn-section/MaintenanceSection';
+import EbusiSection from './components/ebusi-section/EbusiSection';
 
 const ServicePage = () => {
   return (
@@ -11,6 +12,7 @@ const ServicePage = () => {
       <WebSection />
       <AppSection />
       <MaintenanceSection />
+      <EbusiSection />
     </section>
   );
 };
