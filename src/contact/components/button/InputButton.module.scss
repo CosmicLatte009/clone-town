@@ -1,0 +1,44 @@
+@import '../../../style/color';
+
+.inputLabel {
+  display: block;
+  line-height: normal;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  // .input_mark {
+  //   display: block;
+  //   position: absolute;
+  //   width: 5px;
+  //   height: 5px;
+  //   border-radius: 50%;
+  //   left: 0;
+  //   top: 0;
+  //   background-color: $main-color;
+  // }
+}
+
+.input_input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #666;
+  color: #666;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+}
+.input_input::placeholder {
+  color: #b6b6b6;
+  font-weight: normal;
+}
+
+.input_input:focus {
+  border-bottom: 2px solid $main-color !important;
+  outline: none;
+  transition: all 0.5s;
+}

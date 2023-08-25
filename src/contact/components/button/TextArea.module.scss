@@ -1,0 +1,32 @@
+@import '../../../style/color';
+
+textarea {
+  padding: 10px 10px;
+  &::placeholder {
+    color: #b6b6b6;
+    font-weight: normal;
+  }
+}
+
+.project_detailLabel {
+  display: block;
+  font-size: 1.4rem;
+  cursor: pointer;
+  width: 100%;
+}
+.text_area:focus {
+  border-bottom: 2px solid $main-color;
+}
+.text_area {
+  resize: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #a7a7a7;
+  outline: none;
+  color: #b6b6b6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: inherit;
+  width: 100%;
+}
