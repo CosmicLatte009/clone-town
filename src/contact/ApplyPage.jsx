@@ -8,13 +8,8 @@ import CheckBox from './components/button/CheckBox';
 function ApplyPage() {
   return (
     <div className={styles.container}>
-      {/* <IntroduceBox />
-      <ApplyBox /> */}
-      <CheckBox purpose="option" name="check" />
-      <CheckBox purpose="carrer" name="career" />
-      <CheckBox purpose="policy" name="policy" />
-      {/* <CheckBox purpose="carrer" />
-      <CheckBox purpose="policy" /> */}
+      <IntroduceBox />
+      <ApplyBox />
     </div>
   );
 }

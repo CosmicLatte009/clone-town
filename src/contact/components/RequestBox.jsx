@@ -1,4 +1,5 @@
 import styles from './RequestBox.module.scss';
+import CheckBox from './button/CheckBox';
 
 function RequestBox() {
   return (
@@ -132,7 +133,7 @@ function RequestBox() {
             </div>
             <div className={styles.request_policy}>
               <div className={styles.request_policyIn}>
-                <input type="checkbox" className={styles.checkBox} />
+                <CheckBox purpose="policy" name="policy1" />
                 <label>
                   <a href="#">
                     <u>개인정보보호정책</u>

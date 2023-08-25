@@ -1,4 +1,5 @@
 import styles from './ApplyBox.module.scss';
+import CheckBox from './button/CheckBox';
 
 const ApplyBox = () => {
   return (
@@ -32,19 +33,19 @@ const ApplyBox = () => {
             <div className={styles.select_option_in}>
               <ul>
                 <li>
-                  <input type="checkbox" className={styles.option_check} />
+                  <CheckBox purpose="option" name="check1" />
                   <label>기획자</label>
                 </li>
                 <li>
-                  <input type="checkbox" className={styles.option_check} />
+                  <CheckBox purpose="option" name="check2" />
                   <label>프론트엔드</label>
                 </li>
                 <li>
-                  <input type="checkbox" className={styles.option_check} />
+                  <CheckBox purpose="option" name="check3" />
                   <label>백엔드</label>
                 </li>
                 <li>
-                  <input type="checkbox" className={styles.option_check} />
+                  <CheckBox purpose="option" name="check4" />
                   <label>디자이너</label>
                 </li>
               </ul>
@@ -54,11 +55,11 @@ const ApplyBox = () => {
             <div className={styles.careerBox_in}>
               <ul>
                 <li>
-                  <input type="checkbox" className={styles.career_check} />
+                  <CheckBox purpose="carrer" name="career1" />
                   <label>신입</label>
                 </li>
                 <li>
-                  <input type="checkbox" className={styles.option_check} />
+                  <CheckBox purpose="carrer" name="career2" />
                   <label>
                     경력<input className={styles.careerBox_input}></input>년
                   </label>
@@ -150,7 +151,7 @@ const ApplyBox = () => {
             </div>
             <div className={styles.apply_policy}>
               <div className={styles.apply_policyIn}>
-                <input type="checkbox" className={styles.checkBox} />
+                <CheckBox purpose="policy" name="policy1" />
                 <label>
                   <a href="#">
                     <u>개인정보보호정책</u>
