@@ -3,7 +3,7 @@ import styles from './VisionSection.module.scss';
 
 const VisionSection = () => {
   return (
-    <section className={styles.VisionSection}>
+    <section id="Vision" className={styles.VisionSection}>
       <h2 className={styles.Title}>RC VISION</h2>
       <div className={styles.VisionIn}>
         <div className={styles.VisionElement}>

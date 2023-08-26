@@ -4,7 +4,7 @@ import styles from './MaintenanceSection.module.scss';
 
 const MaintenanceSection = () => {
   return (
-    <section className={styles.MtnSection}>
+    <section id="Maintenance" className={styles.MtnSection}>
       <div className={styles.MtnIn}>
         <h2 className={styles.Title}>MAINTENANCE</h2>
 

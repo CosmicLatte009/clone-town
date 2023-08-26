@@ -54,7 +54,7 @@ const WebSection = () => {
   };
 
   return (
-    <section className={styles.Web}>
+    <section id="Web" className={styles.Web}>
       <div className={styles.ServiceWeb}>
         <h2 className={styles.Title}>WEB</h2>
         <div className={styles.ServiceIn}>

@@ -69,7 +69,7 @@ const VisitSection = () => {
   }, []);
 
   return (
-    <section>
+    <section id="Visit">
       <h2 className={styles.Title}>RC VISIT</h2>
       <div className={styles.VisitIn}>
         <div className={styles.VisitInfo}>
