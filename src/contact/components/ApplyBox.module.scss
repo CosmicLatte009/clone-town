@@ -2,7 +2,7 @@
 
 .applyContainer {
   display: flex;
-  padding: 3% 20px 0;
+  flex-grow: 3;
 
   .apply {
     display: flex;
@@ -11,6 +11,9 @@
     padding: 6% 2% 0;
     width: 100%;
     height: 100%;
+    .applyRight {
+      padding: 3% 20px 0;
+    }
 
     .applyTop {
       width: 25%;
@@ -73,7 +76,7 @@
 
     width: 100%;
     height: 100%;
-    padding: 40px 20px 30px;
+    // padding: 40px 20px 30px;
 
     ul {
       display: flex;
@@ -235,6 +238,7 @@
 }
 
 .apply_policyIn {
+  display: flex;
   .checkBox {
     width: 20px;
     height: 20px;
@@ -246,7 +250,6 @@
   }
   label {
     cursor: pointer;
-    padding-left: 30px;
     color: #333;
     a {
       font-weight: bold;
@@ -258,7 +261,7 @@
 .apply_policy {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: column;
   width: 90%;
   height: 100px;
@@ -312,18 +315,6 @@
       justify-content: space-around;
       li {
         color: #999;
-        .option_check {
-          // position: absolute;
-          left: 0;
-          top: 0;
-          width: 18px;
-          height: 18px;
-          border-radius: 50%;
-          text-align: center;
-          background: #fff;
-          border: 2px solid $main-color;
-          box-sizing: border-box;
-        }
         label {
           display: inline-block;
           position: relative;
@@ -342,7 +333,7 @@
   .careerBox_in {
     width: 100%;
     margin-bottom: 20px;
-    margin-top: 40px;
+    // margin-top: 40px;
     ul {
       width: 100%;
       display: flex;
@@ -354,6 +345,7 @@
           display: inline-block;
           position: relative;
           padding-right: 26px;
+          padding-left: 26px;
           cursor: pointer;
           .careerBox_input {
             width: 40px;
