@@ -36,6 +36,20 @@
 
 
 
+.ValueBox>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VB{
+    margin-top: 150px;
+}
+
+
+
+
 @media (min-width: 320px) and (max-width: 480px){
     .ValueSection {
         width: 100%;
@@ -50,6 +64,16 @@
     .ValueBox{
         flex-direction: column;
     }
+
+
+    .ValueBox>div{
+        margin-bottom: 100px;
+    }
+    .VB{
+        margin-top: 0;
+    }
+
+
 }
 
 @media (min-width: 481px) and (max-width: 767px){
@@ -69,6 +93,9 @@
     .ValueBox{
         flex-direction: column;
     }
+    .VB{
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -81,6 +108,13 @@
     .ValueBox{
         flex-direction: column;
     }
+    .VB{
+        margin-top: 0;
+    }
+    .ValueBox>div{
+        width: 50%;
+
+    }
 }
     
 @media (min-width: 1025px) and (max-width: 1400px){
@@ -90,5 +124,13 @@
     }
     .ValueIn{
         flex-direction: column;
+    }
+
+
+
+    //선생님
+    .ValueBox>div{
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
