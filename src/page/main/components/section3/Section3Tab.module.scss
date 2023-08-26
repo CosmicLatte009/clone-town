@@ -1,0 +1,45 @@
+@import '../../../../style/color';
+
+.bottom {
+  padding-top: 3.5rem;
+  width: calc(100% - 120px);
+  margin: 0 auto;
+  > .wrap {
+    padding-bottom: 3rem;
+    > .text_group {
+      line-height: 2.6rem;
+      > .text_wrap {
+        > p {
+          line-height: 3rem;
+          display: none;
+        }
+        > .selected {
+          display: block;
+          font-size: 16px;
+        }
+      }
+    }
+    > .btn_wrap {
+      margin-top: 2rem;
+      width: 100%;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      > button {
+        display: block;
+        border: 2px solid $main-color;
+        border-radius: 10px;
+        padding: 10px 20px;
+        transition: all 0.3s;
+        cursor: pointer;
+        color: $main-color;
+        background: transparent;
+        font-weight: bold;
+        font-size: 1.6rem;
+        &:hover {
+          background-color: $main-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
