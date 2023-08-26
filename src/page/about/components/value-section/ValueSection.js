@@ -3,7 +3,7 @@ import styles from './ValueSection.module.scss';
 
 const ValueSection = () => {
   return (
-    <section className={styles.ValueSection}>
+    <section id="Value" className={styles.ValueSection}>
       <h2 className={styles.Title}>RC VALUE</h2>
       <div className={styles.ValueIn}>
         <div className={styles.ValueBox}>

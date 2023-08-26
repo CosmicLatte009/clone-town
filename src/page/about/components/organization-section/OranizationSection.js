@@ -2,7 +2,7 @@ import styles from './OrganizationSection.module.scss';
 
 const OrganizationSection = () => {
   return (
-    <section className={styles.OrganizationSection}>
+    <section id="Organization" className={styles.OrganizationSection}>
       <h2 className={styles.Title}>RC ORGANIZATION</h2>
       <div className={styles.OrganizationIn}>
         <p className={styles.SubTitle}>알씨타운 조직도입니다.</p>
