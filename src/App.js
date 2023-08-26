@@ -5,7 +5,6 @@ import ApplyPage from './contact/ApplyPage';
 function App() {
   return (
     <>
-      <ApplyPage />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
