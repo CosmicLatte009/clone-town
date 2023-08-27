@@ -6,7 +6,7 @@ function RequestBox() {
     <>
       <div className={styles.requestContainer}>
         <ul className={styles.request}>
-          <div className={styles.requestTop}>
+          <div className={styles.requestLeft}>
             <li>
               <span className={styles.title}>REQUEST</span>
             </li>
@@ -14,7 +14,9 @@ function RequestBox() {
               <p>
                 문의할 내용이 있거나
                 <br />
-                의뢰할 프로젝트가 있으신가요?
+                의뢰할 프로젝트가
+                <br />
+                있으신가요??
               </p>
             </li>
             <li>
