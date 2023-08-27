@@ -1,0 +1,46 @@
+.Icon{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    
+    display: flex;
+    align-items: center;
+}
+
+.Icon:hover .TooltipText{
+    display: block;
+}
+
+.Tooltip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.TooltipText{
+    display: none;
+    line-height: 1.4;
+    bottom: 0;
+    left: 45px;
+    width: 120px;
+    background-color: #dc6868;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+
+    &::after{
+        content: " ";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent #dc6868 transparent transparent;
+    }
+}
