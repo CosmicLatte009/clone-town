@@ -1,4 +1,4 @@
-@import '../../../style/color';
+@import '../../../../style/color';
 
 textarea {
   padding: 10px 10px;
@@ -8,10 +8,22 @@ textarea {
   }
 }
 
+.required_mark {
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background-color: $main-color;
+}
+
 .project_detailLabel {
   display: block;
   font-size: 1.4rem;
   cursor: pointer;
+  margin-left: 5px;
   width: 100%;
 }
 .text_area:focus {

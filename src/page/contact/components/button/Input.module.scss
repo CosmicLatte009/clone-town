@@ -1,4 +1,4 @@
-@import '../../../style/color';
+@import '../../../../style/color';
 
 .inputLabel {
   display: block;
@@ -6,24 +6,25 @@
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: bold;
+  margin-left: 5px;
+}
 
-  // .input_mark {
-  //   display: block;
-  //   position: absolute;
-  //   width: 5px;
-  //   height: 5px;
-  //   border-radius: 50%;
-  //   left: 0;
-  //   top: 0;
-  //   background-color: $main-color;
-  // }
+.required_mark {
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background-color: $main-color;
 }
 
 .input_input {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid #666;
+  border-bottom: 2px solid #a7a7a7;
   color: #666;
   font-size: 1.4rem;
   font-weight: bold;

@@ -1,5 +1,7 @@
 import styles from './RequestBox.module.scss';
 import CheckBox from './button/CheckBox';
+import Input from './button/Input';
+import Textarea from './button/TextArea';
 
 function RequestBox() {
   return (
@@ -36,98 +38,90 @@ function RequestBox() {
               <div className={styles.input_list}>
                 <ul>
                   <li>
-                    <label>성함</label>
-                    <input
-                      className={styles.request_input}
+                    <Input
+                      label="성함"
                       type="text"
                       placeholder="성함을 입력해주세요."
-                      required
+                      important
                     />
                   </li>
                   <li>
-                    <label>연락처</label>
-                    <input
-                      className={styles.request_input}
+                    <Input
+                      label="연락처"
                       type="text"
                       placeholder="-포함하여 입력해주세요."
-                      required
+                      important
                     />
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <label>이메일</label>
-                    <input
-                      className={styles.request_input}
+                    <Input
+                      label="이메일"
                       type="email"
                       placeholder="이메일 형태로 적어주세요."
-                      required
+                      important
                     />
                   </li>
                   <li>
-                    <label>회사명/직급</label>
-                    <input
-                      className={styles.request_input}
+                    <Input
+                      label="회사명/직급"
                       type="text"
                       placeholder="회사명/직급을 입력해주세요."
-                      required
                     />
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <label>예산</label>
-                    <input
-                      className={styles.request_input}
-                      type="email"
+                    <Input
+                      label="예산"
+                      type="text"
                       placeholder="예산을 입력해주세요."
-                      required
                     />
                   </li>
                   <li>
-                    <label>벤치마킹할 사이트</label>
-                    <input
-                      className={styles.request_input}
-                      type="email"
+                    <Input
+                      label="벤치마킹할 사이트"
+                      type="text"
                       placeholder="링크를 입력해주세요."
-                      required
                     />
                   </li>
                 </ul>
                 <ul className={styles.upload}>
                   <li>
+                    <span className={styles.required_mark}></span>
                     <label className={styles.project_nameLabel}>
                       프로젝트 명
                     </label>
                     <input
                       className={styles.project_name}
-                      type="email"
+                      type="text"
                       placeholder="프로젝트 명"
-                      required
                     />
                   </li>
                   <li>
-                    <label className={styles.project_detailLabel}>
-                      프로젝트 설명
-                    </label>
-                    <textarea
+                    <Textarea
+                      label="프로젝트 설명"
                       className={styles.text_area}
                       type="email"
                       rows="5"
                       cols="50"
                       placeholder="프로젝트를 상세히 설명 해 주세요"
-                      required
-                    ></textarea>
+                    />
                   </li>
-                  <li>
+                  <li className={styles.fileInput}>
                     <input
                       className={styles.project_file}
-                      type="email"
+                      type="text"
                       placeholder="파일을 업로드 해 주세요"
-                      required
                     />
                     <div className={styles.file_input_div}>
-                      <img src="" />
+                      <img
+                        src={
+                          process.env.PUBLIC_URL +
+                          '/assets/img/main_banner/upload_icon.webp'
+                        }
+                      />
                     </div>
                   </li>
                 </ul>

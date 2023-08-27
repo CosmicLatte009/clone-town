@@ -1,8 +1,9 @@
-import styles from './InputButton.module.scss';
+import styles from './Input.module.scss';
 
-const InputButton = ({ label, placeholder, type }) => {
+const Input = ({ label, placeholder, type, important }) => {
   return (
     <>
+      <span className={important == true ? styles.required_mark : ''}></span>
       <label className={styles.inputLabel}>{label}</label>
       <input
         className={styles.input_input}
@@ -14,4 +15,4 @@ const InputButton = ({ label, placeholder, type }) => {
   );
 };
 
-export default InputButton;
+export default Input;
