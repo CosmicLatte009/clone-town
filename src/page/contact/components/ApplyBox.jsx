@@ -1,11 +1,13 @@
 import styles from './ApplyBox.module.scss';
 import CheckBox from './button/CheckBox';
+import Input from './button/Input';
+import Textarea from './button/TextArea';
 
 const ApplyBox = () => {
   return (
     <div className={styles.applyContainer}>
       <ul className={styles.apply}>
-        <div className={styles.applyTop}>
+        <div className={styles.applyLeft}>
           <li>
             <span className={styles.title}>APPLY</span>
           </li>
@@ -13,7 +15,9 @@ const ApplyBox = () => {
             <p>
               알씨타운과 함께 할
               <br />
-              소중한 인재를 찾고 있습니다
+              소중한 인재를 찾고
+              <br />
+              있습니다
             </p>
           </li>
           <li>
@@ -24,7 +28,7 @@ const ApplyBox = () => {
             />
           </li>
           <li className={styles.apply_text}>
-            <span className={styles.apply_mark}></span>
+            <span className={styles.required_mark}></span>
             필수 입력사항입니다.
           </li>
         </div>
@@ -72,78 +76,83 @@ const ApplyBox = () => {
               <div className={styles.input_list}>
                 <ul>
                   <li>
-                    <label>성함</label>
-                    <input
+                    <Input
+                      label="성함"
                       className={styles.apply_input}
                       type="text"
                       placeholder="성함을 입력해주세요."
-                      required
+                      important
                     />
                   </li>
                   <li>
-                    <label>연락처</label>
-                    <input
+                    <Input
+                      label="연락처"
                       className={styles.apply_input}
                       type="text"
                       placeholder="-포함하여 입력해주세요."
-                      required
+                      important
                     />
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <label>이메일</label>
-                    <input
+                    <Input
+                      label="이메일"
                       className={styles.apply_input}
                       type="email"
                       placeholder="이메일 형태로 적어주세요."
-                      required
+                      important
                     />
                   </li>
                   <li>
-                    <label>사이트 주소(포트폴리오)</label>
-                    <input
+                    <Input
+                      label="사이트 주소(포트폴리오)"
                       className={styles.apply_input}
                       type="email"
                       placeholder="링크를 입력해주세요."
-                      required
                     />
                   </li>
                 </ul>
                 <ul className={styles.upload}>
                   <li>
-                    <label className={styles.project_detailLabel}>
-                      자기소개
-                    </label>
-                    <textarea
+                    <span className={styles.required_mark}></span>
+                    <Textarea
+                      label="자기소개"
                       className={styles.text_area}
                       type="email"
                       rows="5"
                       cols="50"
                       placeholder="간단한 자기소개 부탁드립니다"
-                      required
-                    ></textarea>
+                    />
                   </li>
-                  <li>
+                  <li className={styles.fileInput}>
                     <input
                       className={styles.project_file}
-                      type="email"
+                      type="text"
                       placeholder="파일을 업로드 해 주세요"
-                      required
                     />
                     <div className={styles.file_input_div}>
-                      <img src="" />
+                      <img
+                        src={
+                          process.env.PUBLIC_URL +
+                          '/assets/img/main_banner/upload_icon.webp'
+                        }
+                      />
                     </div>
                   </li>
-                  <li>
+                  <li className={styles.fileInput}>
                     <input
                       className={styles.project_file}
-                      type="email"
+                      type="text"
                       placeholder="파일을 업로드 해 주세요"
-                      required
                     />
                     <div className={styles.file_input_div}>
-                      <img src="" />
+                      <img
+                        src={
+                          process.env.PUBLIC_URL +
+                          '/assets/img/main_banner/upload_icon.webp'
+                        }
+                      />
                     </div>
                   </li>
                 </ul>
@@ -161,11 +170,11 @@ const ApplyBox = () => {
               </div>
               <button
                 onClick={() => {
-                  alert('지원이 완료되었습니다 :D');
+                  alert('신청이 완료되었습니다 :D');
                 }}
                 className={styles.policyBtn}
               >
-                지원하기
+                신청하기
               </button>
             </div>
           </div>

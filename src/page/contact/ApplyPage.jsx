@@ -5,8 +5,10 @@ import styles from './ApplyPage.module.scss';
 function ApplyPage() {
   return (
     <div className={styles.container}>
-      <IntroduceBox />
-      <ApplyBox />
+      <div className={styles.applyBody}>
+        <IntroduceBox />
+        <ApplyBox />
+      </div>
     </div>
   );
 }
