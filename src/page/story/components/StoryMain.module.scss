@@ -1,0 +1,18 @@
+@use '/src/style/font';
+@use '/src/style/color';
+@use '/src/style/util';
+
+.MainWrap {
+  margin: 100px 170.792px 150px;
+  & h2 {
+    @include font.typo(font.$IBM, 700, 72px, 1.4);
+    color: color.$main-text-gray-color;
+    word-break: keep-all;
+  }
+  & p {
+    @include font.typo(font.$IBM, regular, 24px, 1.4);
+    color: #707070;
+    margin: util.rem(40px) 0 util.rem(100px);
+    min-width: util.rem(432px);
+  }
+}

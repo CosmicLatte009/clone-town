@@ -1,0 +1,15 @@
+@use '/src/style/font';
+@use '/src/style/color';
+@use '/src/style/util';
+
+.List {
+  @include font.typo(font.$laila, bold, 20px, 31.33px);
+  color: #777777;
+}
+
+.Active,
+link:active,
+link:hover {
+  color: color.$main-color;
+  border-bottom: 2px solid color.$main-color;
+}
