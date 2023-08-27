@@ -9,6 +9,6 @@ $NotoSans: 'Noto Sans KR', 'sans-serif';
 @mixin typo($font-family, $font-weight, $font-size, $line-height) {
   font-family: $font-family;
   font-weight: $font-weight;
-  font-size: util.rem($font-size);
+  font-size: $font-size;
   line-height: $line-height;
 }
