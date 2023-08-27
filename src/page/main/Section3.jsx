@@ -18,32 +18,29 @@ const Section3 = () => {
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.inner}>
-            <div
-              className={styles.frame}
-              style={{
-                backgroundImage: 'url(/assets/img/main_banner/computer.png)',
-              }}
-            >
+            <div className={styles.frame}>
               <div className={styles.computer_wrap}>
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    `assets/img/main_banner/section3_${category}.jpg`
+                  }
+                />
                 <div className={styles.back_img}>
-                  <div className={styles.img_wrap}>
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + `assets/img/main_banner/${IMG}`
-                      }
-                    />
-                  </div>
+                  <div className={styles.img_wrap}></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className={styles.right_in}>
+        <div className={styles.right}>
           <div className={styles.inner}>
             <div className={styles.cont}>
               <div className={styles.top}>
                 <h1>
-                  알씨타운이 가진 경험과 기술력으로
+                  알씨타운이 가진 경험과
+                  <br />
+                  기술력으로
                   <br />
                   최고의 퀄리티를 제공합니다.
                 </h1>

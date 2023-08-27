@@ -11,6 +11,7 @@ const Section3Tab = ({ category }) => {
               환경과 다각화 되는 고객에게 모두 대응하기 하기 위해 웹 표준과 웹
               호환성을 준수하여 모든 디바이스에 호환되는 반응형 web제작을
               지원합니다.
+              <br />
             </p>
             <p class="app" className={category == 1 ? styles.selected : ''}>
               고객의 비즈니스 상황과 요구사항에 맞는 기능구현을 통해 최소의
