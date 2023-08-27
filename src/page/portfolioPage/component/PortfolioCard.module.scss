@@ -1,0 +1,135 @@
+@import '../../../style/color';
+
+.container {
+  width: 100%;
+  display: contents;
+  justify-content: space-evenly;
+}
+
+.portWarpper {
+  width: 40%;
+  margin: 0 2% 0 5%;
+}
+
+.port1 {
+  background: #ffebe1;
+}
+.port2 {
+  background: #f9f9f9;
+}
+
+.port1,
+.port2 {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  margin: 0 10% 10%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company_imgWrapper {
+  width: 40%;
+  height: 100%;
+}
+
+.company_Img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.company_contentWrapper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 30px;
+
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    li:nth-child(2) {
+      margin: 5px 10px;
+    }
+
+    li {
+      margin: 10px 0;
+      p {
+        font-size: 1.6rem;
+      }
+
+      h5 {
+        font-size: 2.4rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .company_tagWrapper {
+    width: 100%;
+    padding: 0 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.company_tag {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+
+  ul {
+    width: 100%;
+    padding: 0 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+
+    li {
+      margin: 5px 10px;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: $main-color;
+    }
+  }
+}
+
+.company_colorBox {
+  display: flex;
+  justify-content: space-between;
+  p {
+    line-height: 20px;
+    font-size: 1.6rem;
+    margin-right: 15px;
+  }
+
+  .company_colorPalette {
+    display: flex;
+    span {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: 0 3px;
+    }
+  }
+}
