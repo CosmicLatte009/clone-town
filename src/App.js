@@ -1,10 +1,13 @@
-import PortfolioPage from './portfolioPage/PortfolioPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './page/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <PortfolioPage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
