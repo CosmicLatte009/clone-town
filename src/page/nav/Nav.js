@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import Icon from './Icon';
 import styles from './Nav.module.scss';
 

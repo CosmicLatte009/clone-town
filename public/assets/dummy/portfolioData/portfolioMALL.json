@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "img": "/assets/img/portfolioPage/company/hi_print.png",
+      "Summary": "인쇄 초보도 쉽게 하는 인쇄",
+      "name": "하이프린트",
+      "color": ["#f6ac0f", "#221715", "#888781"],
+      "url": "https://hiprint24.com/index/",
+      "tag": ["쇼핑몰", "인쇄", "IMGE_EDITER"]
+    },
+    {
+      "img": "/assets/img/portfolioPage/company/tao_baro.png",
+      "Summary": "타오바오 직구대행 쇼핑몰",
+      "name": "타오바오",
+      "color": ["#FF5F00", "#f8f8f8"],
+      "url": "https://taobaro.me/",
+      "tag": ["적응형", "딜리버드", "타오바오", "직구대행"]
+    },
+    {
+      "img": "/assets/img/portfolioPage/company/line_way.jpg",
+      "Summary": "동영상 기반 뷰티 쇼핑몰",
+      "name": "라인웨이",
+      "color": ["#52EC8A", "#59626A", "#FFF"],
+      "url": "https://www.lineway.co.kr/",
+      "tag": ["하이브리드 앱", "건강/뷰티 쇼핑몰", "뷰티/헬스"]
+    }
+  ]
+}

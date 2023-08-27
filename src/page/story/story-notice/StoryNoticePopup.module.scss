@@ -1,0 +1,74 @@
+@use '/src/style/color';
+@use '/src/style/font';
+@use '/src/style/util';
+
+.Container {
+  position: fixed;
+  z-index: 9998;
+  width: calc(100% - 80px);
+  height: 100vh;
+  top: 0;
+  left: 80px;
+  bottom: -100vh;
+  padding: 60px 15% 150px 10%;
+  background: white;
+  overflow-y: auto;
+}
+
+.CloseBtn {
+  position: absolute;
+  z-index: 9999;
+  cursor: pointer;
+  top: 30px;
+  right: calc(15% - 26px);
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+
+  background-color: transparent;
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+
+.TitleWrap {
+  margin-top: util.rem(30.9062px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: util.rem(30px);
+  border-top: 3px solid color.$main-color;
+  border-bottom: 1px solid #707070;
+  min-width: util.rem(312px);
+  max-width: util.rem(1900px);
+}
+
+.Date {
+  color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  max-width: 147.2px;
+  margin-right: 30px;
+  & strong {
+    @include font.typo(font.$IBM, bold, 48px, 67.2px);
+  }
+
+  & span {
+    @include font.typo(font.$IBM, regular, 13px, 21px);
+  }
+}
+
+.Title {
+  @include font.typo(font.$IBM, bold, 18px, 25.2px);
+  max-width: util.rem(1606.32px);
+  margin-left: util.rem(20.5521px);
+}
+
+.Desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: util.rem(100px);
+}
