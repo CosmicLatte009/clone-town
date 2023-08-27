@@ -42,7 +42,7 @@ const Nav = () => {
       <div
         className={`${styles.HeaderIn} ${menuOpen ? styles.BgHeaderIn : null}`}
       >
-        <a href="https://www.rctown.co.kr/">
+        <a href="/">
           <div
             className={`${styles.LogoGroup} ${
               menuOpen ? styles.WhiteLogo : null
@@ -75,7 +75,7 @@ const Nav = () => {
           </li>
           <li>
             <Icon
-              url="https://www.rctown.co.kr/story.php?s_type=NEWS"
+              url="/story#Letter"
               img="assets/img/main_banner/icon_newsletter.svg"
               text="뉴스레터 바로가기"
             />
