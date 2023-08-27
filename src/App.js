@@ -8,18 +8,15 @@ import Nav from './page/nav/Nav';
 
 function App() {
   return (
-    <>
-      <PortfolioPage />
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/service" element={<ServicePage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/service" element={<ServicePage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
