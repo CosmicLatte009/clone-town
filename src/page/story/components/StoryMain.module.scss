@@ -11,6 +11,7 @@
     word-break: keep-all;
   }
   & p {
+
     @include font.typo(font.$IBM, regular, 2.4rem, 1.4);
     color: #707070;
     margin: util.rem(40px) 0 100px;

@@ -3,7 +3,7 @@ import styles from './AboutSection.module.scss';
 
 const AboutSection = () => {
   return (
-    <section className={styles.AboutSection}>
+    <section id="About" className={styles.AboutSection}>
       <h1 className={styles.Title}>ABOUT RC</h1>
       <span className={styles.SubTitle}>회사소개</span>
       <Scroll />

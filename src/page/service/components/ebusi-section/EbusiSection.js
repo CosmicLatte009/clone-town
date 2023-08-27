@@ -4,7 +4,7 @@ import styles from './EbusiSection.module.scss';
 
 const EbusiSection = () => {
   return (
-    <section className={styles.EbusiSection}>
+    <section id="Ebusiness" className={styles.EbusiSection}>
       <div className={styles.EbusiIn}>
         <h2 className={styles.Title}>e-Business</h2>
 

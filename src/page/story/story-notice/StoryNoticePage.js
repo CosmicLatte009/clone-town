@@ -4,6 +4,7 @@ import StoryMain from '../components/StoryMain';
 import StoryNoticeLists from '../story-notice/StoryNoticeLists';
 
 const StoryNoticePage = () => {
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -21,6 +22,7 @@ const StoryNoticePage = () => {
         <StoryNoticeLists />
       </StoryMain>
     </div>
+
   );
 };
 

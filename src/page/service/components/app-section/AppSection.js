@@ -54,7 +54,7 @@ const AppSection = () => {
   };
 
   return (
-    <section className={styles.App}>
+    <section id="App" className={styles.App}>
       <div className={styles.ServiceApp}>
         <h2 className={styles.Title}>APP</h2>
         <div className={styles.ServiceIn}>
