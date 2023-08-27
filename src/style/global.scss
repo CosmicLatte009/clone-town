@@ -1,18 +1,20 @@
 @import './font';
 @import './color';
 
-html{
-  overflow-x: hidden;
-    font-size: 10px;
-    font-family: 'IBMPlexSansKR-Regular';
-    color: #222222;
-}
-
-body {
+* {
   box-sizing: border-box;
   &::-webkit-scrollbar {
     width: 20px;
   }
+}
+html {
+  overflow-x: hidden;
+  font-size: 10px;
+  font-family: 'IBMPlexSansKR-Regular';
+  color: #222222;
+}
+
+body {
   &::-webkit-scrollbar-thumb {
     background-color: $main-color;
     border-radius: 30px;
