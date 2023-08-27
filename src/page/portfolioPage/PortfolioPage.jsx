@@ -58,11 +58,11 @@ const PortfolioBox = () => {
         </div>
 
         <div className={styles.portfolio_container}>
-          <div className={styles.portfolio_list}>
-            {data.map((data, index) => {
-              return <PortfolioCard portfolioData={data} index={index} />;
-            })}
-          </div>
+          {/* <div className={styles.portfolio_list}> */}
+          {data.map((data, index) => {
+            return <PortfolioCard portfolioData={data} index={index} />;
+          })}
+          {/* </div> */}
         </div>
       </div>
     </>

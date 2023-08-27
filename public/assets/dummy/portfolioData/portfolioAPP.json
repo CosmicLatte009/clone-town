@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "img": "img/company/line_way.jpg",
+      "img": "/assets/img/portfolioPage/company/line_way.jpg",
       "Summary": "동영상 기반 뷰티 쇼핑몰",
       "name": "라인웨이",
       "color": ["#52EC8A", "#59626A", "#FFF"],

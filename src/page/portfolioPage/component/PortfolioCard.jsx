@@ -1,5 +1,5 @@
 import styles from './PortfolioCard.module.scss';
-import Button from '../../components/Button';
+import Button from '../../../components/Button';
 
 const PortfolioCard = ({ portfolioData, index }) => {
   const data = portfolioData;

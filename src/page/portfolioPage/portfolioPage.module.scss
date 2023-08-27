@@ -1,4 +1,4 @@
-@import '../style/color';
+@import '../../style/color';
 
 .portfolio {
   margin-bottom: 150px;
@@ -12,29 +12,42 @@
     color: $main-color;
     font-size: 5rem;
   }
-  .portfolio_tap {
-    width: 100%;
+}
 
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
-      margin: 100px auto;
+.portfolio_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-      li {
-        margin: 0 40px;
-        span {
-          button {
-            color: #a7a7a7;
-            font-weight: bold;
-            font-size: 2.4rem;
-            background-color: white;
-          }
-          .btn_selected {
-            color: $main-color;
-            border-bottom: 3px solid $main-color;
-          }
+.portfolio_list {
+  display: flex;
+}
+
+.portfolio_tap {
+  width: 100%;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 100px auto;
+
+    li {
+      margin: 0 40px;
+      span {
+        button {
+          color: #a7a7a7;
+          font-weight: bold;
+          font-size: 2.4rem;
+          background-color: white;
+        }
+        .btn_selected {
+          color: $main-color;
+          border-bottom: 3px solid $main-color;
         }
       }
     }
