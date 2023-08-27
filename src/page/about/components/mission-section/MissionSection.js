@@ -1,7 +1,7 @@
 import styles from './MissionSection.module.scss';
 const MissionSection = () => {
   return (
-    <section className={styles.MissionSection}>
+    <section id="Mission" className={styles.MissionSection}>
       <span className={styles.Blind}></span>
       <div className={styles.MissionIn}>
         <h2 className={styles.Title}>RC MISSION</h2>
