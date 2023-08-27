@@ -1,11 +1,12 @@
 @use '/src/style/util';
 @use '/src/style/font';
 
-.ListWrap {
+.Wrap {
+  width: 1824px;
+  min-width: 432px;
   border-top: 3px solid rgb(112, 112, 112);
-  max-width: util.rem(1824px);
-  min-width: util.rem(432px);
 }
+
 .List {
   display: flex;
   flex-direction: row;
@@ -13,7 +14,10 @@
   align-items: center;
   padding: 20px 30px;
   border-bottom: 1px solid #707070;
-  min-width: util.rem(312px);
+  cursor: pointer;
+  &::hover {
+    background-color: rgb(242, 242, 242);
+  }
 }
 
 .Date {
@@ -22,16 +26,19 @@
   flex-direction: column;
   margin-right: 30px;
   & strong {
-    @include font.typo(font.$IBM, bold, 48px, 67.2px);
+    @include font.typo(font.$IBM, bold, 4.8rem, 67.2px);
   }
 
   & span {
-    @include font.typo(font.$IBM, regular, 16px, 21px);
+    @include font.typo(font.$IBM, regular, 1.5rem, 21px);
   }
 }
 
 .Title {
   @include font.typo(font.$IBM, regular, 20px, 24px);
+  & span {
+    min-width: util.rem(312px);
+  }
 }
 
 .PlusBtn {

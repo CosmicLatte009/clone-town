@@ -1,11 +1,17 @@
+import { useEffect } from 'react';
 import StoryHeader from '../components/StoryHeader';
 import StoryMain from '../components/StoryMain';
 import StoryNoticeLists from '../story-notice/StoryNoticeLists';
 
 const StoryNoticePage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <>
-      <StoryHeader>Notice</StoryHeader>
+    <div>
+      <StoryHeader>NOTICE</StoryHeader>
       <StoryMain>
         <h2>알씨타운 공지사항입니다</h2>
         <p>
@@ -15,7 +21,8 @@ const StoryNoticePage = () => {
         </p>
         <StoryNoticeLists />
       </StoryMain>
-    </>
+    </div>
+
   );
 };
 

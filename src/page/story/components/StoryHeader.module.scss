@@ -21,7 +21,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../../../public/assets/img/rc-story/story_notice.jpg');
     background-size: cover;
     background-position: center top;
     z-index: -1;
@@ -36,12 +35,30 @@
   }
 
   .Title {
-    @include font.typo(font.$laila, bold, 100px, 140px);
+    @include font.typo(font.$laila, bold, 10rem, 140px);
+  }
+}
+
+.NoticePage {
+  &::before {
+    background-image: url('../../../../public/assets/img/rc-story/story_notice.jpg');
+  }
+}
+
+.LetterPage {
+  &::before {
+    background-image: url('../../../../public/assets/img/rc-story/story_news.jpg');
+  }
+}
+
+.StudyPage {
+  &::before {
+    background-image: url('../../../../public/assets/img/rc-story/story_talk.jpg');
   }
 }
 
 .Category {
-  @include font.typo(font.$IBM, bold, 30px, 42px);
+  @include font.typo(font.$IBM, bold, 3rem, 42px);
   margin-top: util.rem(30px);
   position: relative;
   z-index: 10;
@@ -51,10 +68,11 @@
     background-color: color.$main-color;
     clear: both;
     display: block;
-    width: util.rem(110px);
-    height: util.rem(20px);
+    width: 110px;
+    height: 20px;
     top: 20px;
     left: calc(50% - 45px);
-    z-index: -1;
+    z-index: -2;
+
   }
 }

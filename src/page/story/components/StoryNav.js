@@ -20,12 +20,14 @@ const StoryNav = () => {
           NOTICE
         </StoryNavLink>
         <StoryNavLink
+          to="/story-letter"
           isActive={activeIndex === 1}
           onClick={() => handleNavLinkClick(1)}
         >
           RC LETTER
         </StoryNavLink>
         <StoryNavLink
+          to="/story-study"
           isActive={activeIndex === 2}
           onClick={() => handleNavLinkClick(2)}
         >

@@ -5,14 +5,14 @@
 .Container {
   position: fixed;
   z-index: 9998;
+  width: calc(100% - 80px);
   height: 100vh;
   top: 0;
-  left: 0;
   left: 80px;
   bottom: -100vh;
   padding: 60px 15% 150px 10%;
   background: white;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .CloseBtn {
@@ -25,7 +25,12 @@
   width: 26px;
   height: 26px;
   margin: 0;
-}
+
+  background-color: transparent;
+  & img {
+    width: 30px;
+    height: 30px;
+  }
 
 .TitleWrap {
   margin-top: util.rem(30.9062px);
@@ -58,4 +63,12 @@
   @include font.typo(font.$IBM, bold, 18px, 25.2px);
   max-width: util.rem(1606.32px);
   margin-left: util.rem(20.5521px);
+}
+
+.Desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: util.rem(100px);
 }
