@@ -1,17 +1,17 @@
-@import '../style/font';
+@use '../style/font';
 @import '../style/color';
 
 .btn {
   cursor: pointer;
   &.small {
-    @include font($IBM, bold, 16px, 1.4);
+    @include font.typo(font.$IBM, bold, 16px, 1.4);
     color: #ffffff;
     padding: 3px 20px;
     border-radius: 5px;
     background: $main-color;
   }
   &.medium {
-    @include font($IBM, bold, 16px, 44px);
+    @include font.typo(font.$IBM, bold, 16px, 44px);
     width: 116px;
     color: $main-color;
     padding: 0 20px;
@@ -25,7 +25,7 @@
     }
   }
   &.large {
-    @include font($IBM, bold, 16px, 45.33px);
+    @include font.typo(font.$IBM, bold, 16px, 45.33px);
     width: 149.55px;
     color: #ffffff;
     padding: 0 20px;
