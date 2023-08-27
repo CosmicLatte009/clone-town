@@ -1,0 +1,76 @@
+{
+  "study": [
+    {
+      "title": "Gzip(Cnu zip)",
+      "date": "2022.07.25",
+      "img": "/assets/img/rc-story/study_Gzip.png",
+      "link": "https://blog.naver.com/ideavillage/222824389334"
+    },
+    {
+      "title": "코드이그나이터에 대해!",
+      "date": "2022.07.25",
+      "img": "/assets/img/rc-story/study_code_igniter.png",
+      "link": "https://www.rctown.co.kr/story.php?s_type=RCTALK"
+    },
+    {
+      "title": "대한민국 대표 뷰티앱 화해 웹사이트 분석 리뷰",
+      "date": "2022.08.01",
+      "img": "/assets/img/rc-story/study_hwahae.png",
+      "link": "https://blog.naver.com/ideavillage/222836197942"
+    },
+    {
+      "title": "'샌드박스' 모바일 웹 리뷰",
+      "date": "2022.08.02",
+      "img": "/assets/img/rc-story/study_sandbox.png",
+      "link": "https://blog.naver.com/ideavillage/222831441661"
+    },
+    {
+      "title": "'사진 온실' 모바일 웹 리뷰",
+      "date": "2022.08.18",
+      "img": "/assets/img/rc-story/study_mobile_web_review.png",
+      "link": "https://blog.naver.com/ideavillage/222837449113"
+    },
+    {
+      "title": "'로보토리' 모바일 웹 리뷰",
+      "date": "2022.08.18",
+      "img": "/assets/img/rc-story/study_robotori.png",
+      "link": "https://blog.naver.com/ideavillage/222850442628"
+    },
+    {
+      "title": "'NCPLAY' 모바일 웹 리뷰",
+      "date": "2022.08.30",
+      "img": "/assets/img/rc-story/study_nc_play.png",
+      "link": "https://blog.naver.com/ideavillage/222857655350"
+    },
+    {
+      "title": "'유성구 문화관광' 모바일 웹 리뷰",
+      "date": "2022.09.01",
+      "img": "/assets/img/rc-story/study_mobile_web_review2.png",
+      "link": "https://blog.naver.com/ideavillage/222862830077"
+    },
+    {
+      "title": "웹모아 웹사이트 분석 리뷰",
+      "date": "2022.09.05",
+      "img": "/assets/img/rc-story/study_webmoa.jpg",
+      "link": "https://blog.naver.com/ideavillage/222867391741"
+    },
+    {
+      "title": "'카노' 모바일 웹 리뷰",
+      "date": "2022.09.20",
+      "img": "/assets/img/rc-story/study_kano.png",
+      "link": "https://blog.naver.com/ideavillage/222869341483"
+    },
+    {
+      "title": "GPT란",
+      "date": "2023.04.26",
+      "img": "/assets/img/rc-story/study_chatGPT.png",
+      "link": "https://blog.naver.com/ideavillage/223081292485"
+    },
+    {
+      "title": "Auto-GPT",
+      "date": "2023.04.26",
+      "img": "/assets/img/rc-story/study_AutoGPT.jpg",
+      "link": "https://blog.naver.com/ideavillage/223083699487"
+    }
+  ]
+}
