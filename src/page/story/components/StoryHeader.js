@@ -13,10 +13,9 @@ const StoryHeader = ({ children }) => {
   } ${isLetterPage ? styles.LetterPage : ''} ${
     isStudyPage ? styles.StudyPage : ''
   }`;
+
   return (
     <header className={headerClass}>
-  return (
-    <header className={styles.HeaderWrap}>
       <StoryNav />
       <div className={styles.TitleWrap}>
         <h1 className={styles.Title}>RC STORY</h1>
