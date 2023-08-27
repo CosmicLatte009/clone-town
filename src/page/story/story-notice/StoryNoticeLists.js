@@ -18,7 +18,7 @@ const StoryNoticeLists = () => {
 
   return (
     <>
-      <ul className={styles.ListWrap}>
+      <ul className={styles.Wrap}>
         {noticeData.reverse().map((item, index) => (
           <li
             className={styles.List}
