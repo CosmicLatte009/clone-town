@@ -4,6 +4,8 @@ import HomePage from './page/HomePage';
 import AboutPage from './page/about/AboutPage';
 import ServicePage from './page/service/ServicePage';
 import PortfolioPage from './page/portfolioPage/PortfolioPage';
+import RequestPage from './page/contact/RequestPage';
+import ApplyPage from './page/contact/ApplyPage';
 import Nav from './page/nav/Nav';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/contact/Request" element={<RequestPage />} />
+        <Route path="/Apply" element={<ApplyPage />} />
       </Routes>
     </BrowserRouter>
   );
