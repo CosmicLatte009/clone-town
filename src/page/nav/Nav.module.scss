@@ -1,0 +1,692 @@
+header{
+    overflow: hidden;
+}
+
+.HeaderIn{
+    background: transparent;
+    box-shadow: none;
+    transition: none 0s ease 0s;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 8000;
+    box-sizing: border-box;
+    padding: 50px 0;
+    width: 80px;
+    height: 100vh;
+}
+
+.HeaderIn>a{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+.BgHeaderIn{
+    background: rgb(238, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 0px 6px;
+    transition: none 0s ease 0s;
+}
+
+.LogoGroup{
+    width: 33px;
+    height: 33px;
+}
+
+.LogoGroup>img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.LogoGroup>img:last-child{
+    display: none;
+}
+
+.Hamburger{
+    position: relative;
+    top: 60px;
+    right: 0;
+    z-index: 100;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+
+    span{
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 70%;
+        height: 4px;
+        background: var(--bgcolor, #dc6868);
+        border-radius: 5px;
+        content: "";
+        transition: all 0.3s;
+        margin-left: 15%;
+    }
+
+    &::before{
+        transform: translateY(-12px);
+        position: absolute;
+        left: 0;
+        top: 22px;
+        width: 70%;
+        height: 4px;
+        background: var(--bgcolor, #dc6868);
+        border-radius: 5px;
+        content: "";
+        transition: all 0.3s;
+        margin-left: 15%;
+    }
+    &::after{
+        transform: translateY(8px);
+        position: absolute;
+        left: 0;
+        top: 22px;
+        width: 70%;
+        height: 4px;
+        background: var(--bgcolor, #dc6868);
+        border-radius: 5px;
+        content: "";
+        transition: all 0.3s;
+        margin-left: 15%;
+    }
+}
+
+.CloseHamburger{
+    position: relative;
+    top: 60px;
+    right: 0;
+    z-index: 100;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+
+    span{
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 70%;
+        height: 4px;
+        background: var(--bgcolor, #dc6868);
+        border-radius: 5px;
+        content: "";
+        transition: all 0.3s;
+        margin-left: 15%;
+
+        opacity: 0;
+    }
+
+    &::before{
+        transform: translateY(0px) rotate(135deg);
+
+        position: absolute;
+        left: 0;
+        top: 22px;
+        width: 70%;
+        height: 4px;
+        background: var(--bgcolor, #dc6868);
+        border-radius: 5px;
+        content: "";
+        transition: all 0.3s;
+        margin-left: 15%;
+    }
+
+    &::after{
+        transform: translateY(0px) rotate(-135deg);
+
+        position: absolute;
+        left: 0;
+        top: 22px;
+        width: 70%;
+        height: 4px;
+        background: var(--bgcolor, #dc6868);
+        border-radius: 5px;
+        content: "";
+        transition: all 0.3s;
+        margin-left: 15%;
+    }
+}
+
+.Icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.Icons>li{
+    cursor: pointer;
+    padding-top: 20px;
+    width: 33px;
+}
+
+
+.HideMenu{
+    display: none;
+}
+
+.ShowMenu{
+    left: 80px;
+
+    display: block;
+    height: 100vh;
+    width: 600px;
+    position: fixed;
+    top: 0;
+    z-index: 7999;
+    background-color: #eee;
+    border-radius: 0 0 20px 0;
+}
+
+nav::after{
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 100%;
+    width: 20px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 20px 0;
+}
+
+.NavIn{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    z-index: 8000;
+    transform: translateY(-50%);
+}
+
+.NavWrap{
+    width: 100%;
+    height: 100%;
+
+    margin: 10% auto 0;  //30%->10%
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.NavLeft{
+    width: 100%;
+    height: 40%;
+}
+
+.Gnb{
+    position: relative;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.Gnb>li{
+    position: relative;
+    padding: 8px 10px;
+    width: 200px;
+    height: 45px;
+    box-sizing: border-box;
+    font-size: 2.5rem;
+    color: #ababab;
+    font-weight: bold;
+    font-family: "Laila", sans-serif;
+    cursor: pointer;
+}
+
+.Gnb>li:hover{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Laila", sans-serif;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.GnbIn{
+    display: none;
+
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 200px;
+    z-index: 8001;
+}
+
+.GnbIn>li{
+    position: relative;
+    padding: 8px 10px;
+    width: 270px;
+    height: 45px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.GnbIn>li>a{
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100%;
+    padding: 0 10px 0 0;
+    line-height: 45px;
+    font-size: 1.9rem;
+    color: #ccc;
+    font-weight: bold;
+    font-family: "Laila", sans-serif;
+    white-space: nowrap;
+}
+
+.GnbIn>li:hover{
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.GnbIn>li:hover>a{
+    font-size: 1.9rem;
+    color: #dc6868;
+    font-weight: bold;
+    font-family: "Laila", sans-serif;
+
+    &::after{
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        width: 0;
+        height: 2px;
+        background-color: #dc6868;
+        content: "";
+    }
+}
+
+.GnbIn>li>a:hover:after{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.NavRight{
+    width: 100%;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.NavRightWrap{
+    width: 260px;
+    margin: 50px 0 0 50px;
+    color: #000;
+
+    >li{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+.NavDownload{
+    height: 34px;
+}
+
+.NavDownload>a{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    &::after{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #333;
+        content: "";
+    }
+}
+
+.Phone{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.PhoneName{
+    float: left;
+
+    >li{
+        width: 84px;
+        text-align: left;
+        margin-top: 5px;
+        font-weight: bold;
+        color: #333;
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+}
+
+.PhoneNum{
+    float: left;
+
+    >li{
+        text-align: right;
+        margin-top: 5px;
+        font-size: 1.4rem;
+    }
+}
+
+.LunchTime{
+    width: 136.9px;
+    float: left;
+
+    >li{
+        text-align: right;
+        margin-top: 5px;
+        font-size: 1.4rem;
+    }
+}
+
+.Phone>p{
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+.NavRightWrap address{
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.NavRightWrap address p{
+    font-weight: 700;
+}
+
+.NavRightWrap address span{
+    font-size: 1.4rem;
+}
+
+.Bold{
+    font-weight: 600;
+}
+
+
+@media (max-width: 480px){
+    .HeaderIn{     
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        z-index: 8000;
+        padding: 0 20px;
+        width: 100vw;
+        height: 80px;
+
+        background: transparent;
+        box-shadow: rgba(0, 0, 0, 0) 3px 0px 6px;
+        transition: none 0s ease 0s;
+    }
+   
+    .WhiteLogo>img:first-child{
+        display: none;
+    }
+
+    .WhiteLogo>img:last-child{
+        display: block;
+    }
+
+    .Hamburger{
+        top: 0;
+    }
+
+    .CloseHamburger{
+        top: 0;
+        &::before{
+            background: var(--bgcolor, #fff);
+        }
+        &::after{
+            background: var(--bgcolor, #fff);
+        }
+    }
+
+    .Icons{
+        display: none;
+    }
+
+    nav::after{
+        top: 0
+    }
+
+    .ShowMenu{
+        display: block;
+        top: 0px;
+
+        width: 100%;
+        height: calc(var(--h_vh, 1vh) * 100);
+        left: 0;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+    
+    .HideMenu{
+        display: none;
+        top: -100%;
+    }
+
+
+
+
+
+    .NavIn{
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+    }
+
+    .NavWrap{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        margin: 30% auto 0;
+    }
+
+    .NavLeft{
+        width: 100%;
+        height: initial;
+    }
+
+    .Gnb{
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .Gnb>li{
+        height: initial;
+
+        &:hover{
+            background-color: initial;
+        }
+    }
+
+    .Gnb>li.On{
+        background: initial;
+        color:#dc6868;
+    }
+
+    .GnbIn{
+        position: initial;
+        width: 100%;
+        display: none;
+    }
+
+    .On .GnbIn{
+        display: block;
+    }
+
+    .NavRight{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .HeaderIn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 20px;
+        width: 100vw;
+        height: 80px;
+
+        background: transparent;
+        box-shadow: rgba(0, 0, 0, 0) 3px 0px 6px;
+        transition: none 0s ease 0s;
+    }
+
+    .WhiteLogo>img:first-child{
+        display: none;
+    }
+
+    .WhiteLogo>img:last-child{
+        display: block;
+    }
+
+    .Hamburger{
+        top: 0;
+    }
+
+    .CloseHamburger{
+        top: 0;
+        &::before{
+            background: var(--bgcolor, #fff);
+        }
+        &::after{
+            background: var(--bgcolor, #fff);
+        }
+    }
+
+    .Icons{
+        display: none;
+    }
+
+    .ShowMenu{
+        display: block;
+        top: 0px;
+
+        width: 100%;
+        height: calc(var(--h_vh, 1vh) * 100);
+        left: 0;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+    
+    .HideMenu{
+        display: none;
+        top: -100%;
+    }
+
+    .NavRight{
+        display: none;
+        width: 100%;
+        flex: 1;
+    }
+
+
+
+
+
+
+    .NavIn{
+        width: 100%;
+        padding: 0;
+    }
+
+    .NavWrap{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .NavLeft{
+        width: 481px;
+        flex: 1.5;
+    }
+
+    .Gnb{
+        padding: 0;
+
+        position: relative;
+        width: 100%;
+        margin-left: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .Gnb>li{
+        width: 300px;
+        height: initial;
+
+        &:hover{
+            background-color: initial;
+        }
+    }
+
+    .GnbIn{
+        position: initial;
+        padding: 0;
+
+        width: 100%;
+        display: none;
+    }
+
+    .Gnb>li.On{
+        color: #dc6868;
+    }
+
+    .On .GnbIn{
+        display: block;
+    }
+
+    .GnbIn>li{
+        padding: 0 10px;
+    }
+
+    .GnbIn>li:hover{
+        background-color: rgb(238, 238, 238);
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .Gnb>li:hover .GnbIn{
+        display: block;
+    }
+
+    .Gnb>li:hover{
+        color: #dc6868;
+    }
+}
