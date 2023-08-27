@@ -1,10 +1,21 @@
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import ServiceImg from '../../../../components/ServiceImg';
 import ServiceText from '../../../../components/ServiceText';
 import styles from './MaintenanceSection.module.scss';
 
 const MaintenanceSection = () => {
+  const { hash } = useLocation();
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    if (sectionEl.current !== null && hash === '#Maintenance') {
+      sectionEl.current.scrollIntoView();
+    }
+  }, [sectionEl.current, hash]);
+
   return (
-    <section id="Maintenance" className={styles.MtnSection}>
+    <section ref={sectionEl} id="Maintenance" className={styles.MtnSection}>
       <div className={styles.MtnIn}>
         <h2 className={styles.Title}>MAINTENANCE</h2>
 

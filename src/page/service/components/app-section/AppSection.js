@@ -1,8 +1,19 @@
 import { useState } from 'react';
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './AppSection.module.scss';
 import ServiceMoreBtn from '../../../../components/ServiceMoreBtn';
 
 const AppSection = () => {
+  const { hash } = useLocation();
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    if (sectionEl.current !== null && hash === '#App') {
+      sectionEl.current.scrollIntoView();
+    }
+  }, [sectionEl.current, hash]);
+
   const items = [1, 2, 3];
   const [select, setSelect] = useState(1);
   const [imageSrc, setImageSrc] = useState(
@@ -44,17 +55,17 @@ const AppSection = () => {
   };
 
   const handleImage = (item) => {
-    if (item == 1) {
+    if (item === 1) {
       setImageSrc('/assets/img/rc_service/service_app1.png');
-    } else if (item == 2) {
+    } else if (item === 2) {
       setImageSrc('/assets/img/rc_service/service_app2.png');
-    } else if (item == 3) {
+    } else if (item === 3) {
       setImageSrc('/assets/img/rc_service/service_app3.png');
     }
   };
 
   return (
-    <section id="App" className={styles.App}>
+    <section ref={sectionEl} id="App" className={styles.App}>
       <div className={styles.ServiceApp}>
         <h2 className={styles.Title}>APP</h2>
         <div className={styles.ServiceIn}>
@@ -64,7 +75,7 @@ const AppSection = () => {
                 {items.map((item, index) => (
                   <li
                     key={index}
-                    className={`${select == item ? styles.Select : ''}`}
+                    className={`${select === item ? styles.Select : ''}`}
                     onClick={() => handleClick(item)}
                   >
                     {item}

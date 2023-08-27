@@ -1,9 +1,21 @@
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import ValueBox from './ValueBox';
 import styles from './ValueSection.module.scss';
 
 const ValueSection = () => {
+  const { hash } = useLocation();
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    if (sectionEl.current !== null && hash === '#Value') {
+      sectionEl.current.scrollIntoView();
+    }
+  }, [sectionEl.current, hash]);
+
   return (
-    <section id="Value" className={styles.ValueSection}>
+    <section ref={sectionEl} id="Value" className={styles.ValueSection}>
       <h2 className={styles.Title}>RC VALUE</h2>
       <div className={styles.ValueIn}>
         <div className={styles.ValueBox}>

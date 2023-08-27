@@ -1,8 +1,23 @@
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './IntroductionSection.module.scss';
 
 const IntroductionSection = () => {
+  const { hash } = useLocation();
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    if (sectionEl.current !== null && hash === '#Introduction') {
+      sectionEl.current.scrollIntoView();
+    }
+  }, [sectionEl.current, hash]);
+
   return (
-    <section id="Introduction" className={styles.IntroductionSection}>
+    <section
+      ref={sectionEl}
+      id="Introduction"
+      className={styles.IntroductionSection}
+    >
       <div className={styles.TitleSection}>
         <p className={styles.Title}>BEST QUALITY</p>
         <p className={styles.Title2}>SPECIALIZATION</p>
