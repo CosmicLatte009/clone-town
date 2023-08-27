@@ -31,13 +31,17 @@
         padding: 10px 20px;
         transition: all 0.3s;
         cursor: pointer;
-        color: $main-color;
         background: transparent;
         font-weight: bold;
         font-size: 1.6rem;
+        a {
+          color: $main-color;
+        }
         &:hover {
           background-color: $main-color;
-          color: #fff;
+          a {
+            color: #fff;
+          }
         }
       }
     }

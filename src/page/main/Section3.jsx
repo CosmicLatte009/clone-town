@@ -38,7 +38,7 @@ const Section3 = () => {
             </div>
           </div>
         </div>
-        <div className={styles.right}>
+        <div className={styles.right_in}>
           <div className={styles.inner}>
             <div className={styles.cont}>
               <div className={styles.top}>
@@ -56,6 +56,9 @@ const Section3 = () => {
                     className={category == '0' ? styles.tab_item : ''}
                   >
                     WEB
+                    <span
+                      className={category == '0' ? styles.tab_line : ''}
+                    ></span>
                   </li>
                   <li
                     value="1"
@@ -63,6 +66,9 @@ const Section3 = () => {
                     className={category == '1' ? styles.tab_item : ''}
                   >
                     APP
+                    <span
+                      className={category == '1' ? styles.tab_line : ''}
+                    ></span>
                   </li>
                   <li
                     value="2"
@@ -70,6 +76,9 @@ const Section3 = () => {
                     className={category == '2' ? styles.tab_item : ''}
                   >
                     Maintennace
+                    <span
+                      className={category == '2' ? styles.tab_line : ''}
+                    ></span>
                   </li>
                   <li
                     value="3"
@@ -77,9 +86,11 @@ const Section3 = () => {
                     className={category == '3' ? styles.tab_item : ''}
                   >
                     E-Besiness
+                    <span
+                      className={category == '3' ? styles.tab_line : ''}
+                    ></span>
                   </li>
                 </ul>
-                <span className={`${styles.tab_line} ${styles.blind}`}></span>
               </div>
               <Section3Tab category={category} />
             </div>
