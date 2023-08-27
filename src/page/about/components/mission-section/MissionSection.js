@@ -1,7 +1,19 @@
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './MissionSection.module.scss';
+
 const MissionSection = () => {
+  const { hash } = useLocation();
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    if (sectionEl.current !== null && hash === '#Mission') {
+      sectionEl.current.scrollIntoView();
+    }
+  }, [sectionEl.current, hash]);
+
   return (
-    <section className={styles.MissionSection}>
+    <section ref={sectionEl} id="Mission" className={styles.MissionSection}>
       <span className={styles.Blind}></span>
       <div className={styles.MissionIn}>
         <h2 className={styles.Title}>RC MISSION</h2>

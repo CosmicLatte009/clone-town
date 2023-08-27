@@ -1,10 +1,21 @@
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import ServiceImg from '../../../../components/ServiceImg';
 import ServiceText from '../../../../components/ServiceText';
 import styles from './EbusiSection.module.scss';
 
 const EbusiSection = () => {
+  const { hash } = useLocation();
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    if (sectionEl.current !== null && hash === '#Ebusiness') {
+      sectionEl.current.scrollIntoView();
+    }
+  }, [sectionEl.current, hash]);
+
   return (
-    <section className={styles.EbusiSection}>
+    <section ref={sectionEl} id="Ebusiness" className={styles.EbusiSection}>
       <div className={styles.EbusiIn}>
         <h2 className={styles.Title}>e-Business</h2>
 

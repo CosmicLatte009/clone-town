@@ -1,9 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './VisitSection.module.scss';
 
 const { kakao } = window;
 
 const VisitSection = () => {
+  const { hash } = useLocation();
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    if (sectionEl.current !== null && hash === '#Visit') {
+      sectionEl.current.scrollIntoView();
+    }
+  }, [sectionEl.current, hash]);
+
   useEffect(() => {
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div
       mapOption = {
@@ -69,7 +79,7 @@ const VisitSection = () => {
   }, []);
 
   return (
-    <section>
+    <section ref={sectionEl} id="Visit">
       <h2 className={styles.Title}>RC VISIT</h2>
       <div className={styles.VisitIn}>
         <div className={styles.VisitInfo}>

@@ -1,9 +1,20 @@
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import Vision from './Vision';
 import styles from './VisionSection.module.scss';
 
 const VisionSection = () => {
+  const { hash } = useLocation();
+  const sectionEl = useRef(null);
+
+  useEffect(() => {
+    if (sectionEl.current !== null && hash === '#Vision') {
+      sectionEl.current.scrollIntoView();
+    }
+  }, [sectionEl.current, hash]);
+
   return (
-    <section className={styles.VisionSection}>
+    <section ref={sectionEl} id="Vision" className={styles.VisionSection}>
       <h2 className={styles.Title}>RC VISION</h2>
       <div className={styles.VisionIn}>
         <div className={styles.VisionElement}>
