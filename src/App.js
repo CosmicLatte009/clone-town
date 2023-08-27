@@ -5,6 +5,9 @@ import AboutPage from './page/about/AboutPage';
 import ServicePage from './page/service/ServicePage';
 import PortfolioPage from './page/portfolioPage/PortfolioPage';
 import Nav from './page/nav/Nav';
+import StoryNoticePage from './page/story/story-notice/StoryNoticePage';
+import StoryLetterPage from './page/story/story-letter/StoryLetterPage';
+import StoryStudyPage from './page/story/story-study/StoryStudyPage';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/story-notice" element={<StoryNoticePage />} />
+        <Route path="/story-letter" element={<StoryLetterPage />} />
+        <Route path="/story-study" element={<StoryStudyPage />} />
       </Routes>
     </BrowserRouter>
   );
