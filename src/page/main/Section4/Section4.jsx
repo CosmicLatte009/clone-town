@@ -1,4 +1,5 @@
 import styles from './Section4.module.scss';
+import Carousel from './components/Carousel';
 
 const Section4 = () => {
   return (
@@ -43,7 +44,9 @@ const Section4 = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.right}></div>
+        <div className={styles.right}>
+          <Carousel />
+        </div>
       </div>
     </div>
   );

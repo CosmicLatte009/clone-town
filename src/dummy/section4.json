@@ -4,31 +4,31 @@
       "name": "WYD(와이드)",
       "summary": "참여형 컨텐츠 서비스",
       "url": "http://www.wyd-event.com/",
-      "img": "/assets/img/main_banner/section4_0.png"
+      "img": "/assets/img/main_banner/section4_0.jpg"
     },
     {
       "name": "대리주부",
       "summary": "신뢰기반 가사 서비스",
       "url": "https://www.daerijubu.com/",
-      "img": "/assets/img/main_banner/section4_1.png"
+      "img": "/assets/img/main_banner/section4_1.jpg"
     },
     {
       "name": "돌바",
       "summary": "안전한 돌봄 케어 서비스",
       "url": "https://wooridongnecare.co.kr/",
-      "img": "/assets/img/main_banner/section4_2.png"
+      "img": "/assets/img/main_banner/section4_2.jpg"
     },
     {
       "name": "클럽 베트남",
       "summary": "최적화 맞춤형 여행 사이트",
       "url": "http://clubvietnam7.co.kr/",
-      "img": "/assets/img/main_banner/section4_3.png"
+      "img": "/assets/img/main_banner/section4_3.jpg"
     },
     {
       "name": "공만세",
       "summary": "교육용 동영상 웹/앱",
       "url": "https://www.gongmanse.com/",
-      "img": "/assets/img/main_banner/section4_4.png"
+      "img": "/assets/img/main_banner/section4_4.jpg"
     }
   ]
 }
