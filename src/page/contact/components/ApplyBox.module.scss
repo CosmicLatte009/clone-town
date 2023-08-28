@@ -73,6 +73,7 @@
     margin: 0 0 30px;
   }
   li {
+    width: 45%;
     label {
       display: block;
       line-height: normal;
@@ -111,7 +112,7 @@
   li {
     padding: 0;
     margin: 20px 0;
-
+    width: 100%;
     &:first-child {
       display: flex;
       flex-direction: column;
