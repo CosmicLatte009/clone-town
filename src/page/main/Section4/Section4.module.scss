@@ -43,21 +43,19 @@
 }
 
 .arrow {
-  width: 100%;
+  width: 170%;
   height: 50px;
   position: absolute;
   bottom: 0;
   right: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   flex-direction: row;
   li {
     width: 100px;
     height: 100%;
     cursor: pointer;
     img {
-      position: absolute;
       top: 0;
       max-height: 100%;
       transition: all 0.5s;
@@ -66,14 +64,25 @@
 }
 
 .left_arrow {
+  position: absolute;
+  bottom: 10%;
+  width: 100vw;
+  margin-left: calc(-50vw + 60%);
   img {
-    left: 20px;
+    width: 4%;
+    right: 40px;
   }
 }
 
 .right_arrow {
+  left: 30px;
+  position: absolute;
+  bottom: 10%;
+  width: 100vw;
+  margin-left: calc(-50vw + 60%);
   img {
-    right: 20px;
+    width: 4%;
+    left: 40px;
   }
 }
 

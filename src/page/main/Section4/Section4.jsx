@@ -1,6 +1,28 @@
 import styles from './Section4.module.scss';
 import Carousel from './components/Carousel';
 
+export const SamplePrevArrow = ({ onClick }) => {
+  return (
+    <div className={styles.left_arrow}>
+      <img
+        src={process.env.PUBLIC_URL + 'assets/img/main_banner/arrow_left.png'}
+        onClick={onClick}
+      />
+    </div>
+  );
+};
+
+export const SampleNextArrow = ({ onClick }) => {
+  return (
+    <div className={styles.right_arrow}>
+      <img
+        src={process.env.PUBLIC_URL + 'assets/img/main_banner/arrow_right.png'}
+        onClick={onClick}
+      />
+    </div>
+  );
+};
+
 const Section4 = () => {
   return (
     <div className={styles.section}>
@@ -25,24 +47,6 @@ const Section4 = () => {
               </button>
             </div>
           </div>
-          <ul className={styles.arrow}>
-            <li className={styles.left_arrow}>
-              <img
-                src={
-                  process.env.PUBLIC_URL +
-                  'assets/img/main_banner/arrow_left.png'
-                }
-              />
-            </li>
-            <li className={styles.right_arrow}>
-              <img
-                src={
-                  process.env.PUBLIC_URL +
-                  'assets/img/main_banner/arrow_right.png'
-                }
-              />
-            </li>
-          </ul>
         </div>
         <div className={styles.right}>
           <Carousel />
