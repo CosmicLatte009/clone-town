@@ -4,6 +4,8 @@ import HomePage from './page/HomePage';
 import AboutPage from './page/about/AboutPage';
 import ServicePage from './page/service/ServicePage';
 import PortfolioPage from './page/portfolioPage/PortfolioPage';
+import RequestPage from './page/contact/RequestPage';
+import ApplyPage from './page/contact/ApplyPage';
 import Nav from './page/nav/Nav';
 
 import FixedButton from './components/FixedButton';

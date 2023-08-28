@@ -69,7 +69,7 @@ const MobileFixedButton = () => {
               </li>
 
               <li>
-                <a href="/story#Letter">
+                <a href="/story-letter">
                   <img
                     src="assets/img/main_banner/icon_newsletter.svg"
                     alt="뉴스레터 바로가기"

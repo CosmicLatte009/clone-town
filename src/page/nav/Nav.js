@@ -75,7 +75,7 @@ const Nav = () => {
           </li>
           <li>
             <Icon
-              url="/story#Letter"
+              url="/story-letter"
               img="assets/img/main_banner/icon_newsletter.svg"
               text="뉴스레터 바로가기"
             />
@@ -222,7 +222,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/portfolio#Portfolio"
+                        href="/portfolio"
                         onClick={() => toggleMenu()}
                       >
                         PORTFOLIO
@@ -240,7 +240,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/story#Notice"
+                        href="/story-notice"
                         onClick={() => toggleMenu()}
                       >
                         NOTICE
@@ -250,7 +250,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/story#Letter"
+                        href="/story-letter"
                         onClick={() => toggleMenu()}
                       >
                         RC LETTER
@@ -260,7 +260,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/story#Study"
+                        href="/story-study"
                         onClick={() => toggleMenu()}
                       >
                         RC STUDY
@@ -278,7 +278,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/contact#Request"
+                        href="/contact-request"
                         onClick={() => toggleMenu()}
                       >
                         견적문의
@@ -288,7 +288,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/contact#Apply"
+                        href="/contact-apply"
                         onClick={() => toggleMenu()}
                       >
                         채용문의
@@ -306,7 +306,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/partners#Partners"
+                        href="/partners"
                         onClick={() => toggleMenu()}
                       >
                         PARTNERS
