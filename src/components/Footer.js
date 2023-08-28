@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={styles.FooterWrap}>
-      <div>
+      <div className={styles.FooterLeft}>
         <div className={styles.LogoWrap}>
           <img
             className={styles.SoftLabsLogo}
