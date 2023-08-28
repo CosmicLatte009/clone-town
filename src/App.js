@@ -17,15 +17,14 @@ import StoryStudyPage from './page/story/story-study/StoryStudyPage';
 
 import Section4 from './page/main/Section4/Section4';
 import Section3 from './page/main/Section3/Section3';
-import Carousel from './page/main/Section4/components/Carousel';
 
 function App() {
   return (
     <>
-      <Section4 />
-      {/* <Carousel /> */}
-
       <BrowserRouter>
+        <Section3 />
+        <Section4 />
+
         <Nav />
         <FixedButton />
         <MobileFixedButton />

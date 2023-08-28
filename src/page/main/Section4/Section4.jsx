@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './Section4.module.scss';
 import Carousel from './components/Carousel';
 
@@ -41,9 +43,7 @@ const Section4 = () => {
             </p>
             <div className={styles.btn_wrap}>
               <button>
-                <a href="https://www.rctown.co.kr/service.php">
-                  자세히 보러가기
-                </a>
+                <Link to="/portfolio">자세히 보러가기</Link>
               </button>
             </div>
           </div>

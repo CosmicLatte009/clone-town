@@ -39,12 +39,12 @@
     background: transparent;
     font-weight: bold;
     font-size: 1.6rem;
-    Link {
+    a {
       color: $main-color;
     }
     &:hover {
       background-color: $main-color;
-      Link {
+      a {
         color: #fff;
       }
     }

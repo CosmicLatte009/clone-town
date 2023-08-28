@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import styles from './Section3Tab.module.scss';
+import ServicePage from '../../../service/ServicePage';
 
 const Section3Tab = ({ category }) => {
   return (
@@ -39,7 +40,9 @@ const Section3Tab = ({ category }) => {
           </div>
         </div>
         <div className={styles.btn_wrap}>
-          <button>{/* <Link to="/service">더 알아보기</Link> */}</button>
+          <button>
+            <Link to="/service#Service">더 알아보기</Link>
+          </button>
         </div>
       </div>
     </div>
