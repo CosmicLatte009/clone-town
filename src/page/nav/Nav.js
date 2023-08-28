@@ -278,7 +278,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/contact/Request"
+                        href="/contact#Request"
                         onClick={() => toggleMenu()}
                       >
                         견적문의
@@ -288,7 +288,7 @@ const Nav = () => {
                     <li>
                       <a
                         target="_self"
-                        href="/contact/Apply"
+                        href="/contact#Apply"
                         onClick={() => toggleMenu()}
                       >
                         채용문의

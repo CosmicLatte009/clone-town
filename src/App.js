@@ -29,8 +29,8 @@ function App() {
         <Route path="/story-notice" element={<StoryNoticePage />} />
         <Route path="/story-letter" element={<StoryLetterPage />} />
         <Route path="/story-study" element={<StoryStudyPage />} />
-        <Route path="/contact/request" element={<RequestPage />} />
-        <Route path="/contact/apply" element={<ApplyPage />} />
+        <Route path="/contact-request" element={<RequestPage />} />
+        <Route path="/contact-apply" element={<ApplyPage />} />
       </Routes>
     </BrowserRouter>
   );
