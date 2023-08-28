@@ -7,9 +7,16 @@
   color: #777777;
 }
 
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .Active,
-link:active,
-link:hover {
+.Link:active,
+.Link:hover {
   color: color.$main-color;
   border-bottom: 2px solid color.$main-color;
 }
