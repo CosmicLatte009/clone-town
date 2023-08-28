@@ -17,22 +17,24 @@ import StoryStudyPage from './page/story/story-study/StoryStudyPage';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Nav />
-      <FixedButton />
-      <MobileFixedButton />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/service" element={<ServicePage />} />
-        <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/story-notice" element={<StoryNoticePage />} />
-        <Route path="/story-letter" element={<StoryLetterPage />} />
-        <Route path="/story-study" element={<StoryStudyPage />} />
-        <Route path="/contact-request" element={<RequestPage />} />
-        <Route path="/contact-apply" element={<ApplyPage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Nav />
+        <FixedButton />
+        <MobileFixedButton />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/service" element={<ServicePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/story-notice" element={<StoryNoticePage />} />
+          <Route path="/story-letter" element={<StoryLetterPage />} />
+          <Route path="/story-study" element={<StoryStudyPage />} />
+          <Route path="/contact-request" element={<RequestPage />} />
+          <Route path="/contact-apply" element={<ApplyPage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
