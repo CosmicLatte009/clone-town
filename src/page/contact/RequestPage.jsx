@@ -5,8 +5,8 @@ import styles from './RequestPage.module.scss';
 function RequestPage() {
   return (
     <div className={styles.container}>
+      <IntroduceBox />
       <div className={styles.requestBody}>
-        <IntroduceBox />
         <RequestBox />
       </div>
     </div>
