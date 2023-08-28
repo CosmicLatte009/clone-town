@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import styles from './Section3.module.scss';
-import Section3Tab from './components/section3/Section3Tab';
+import Section3Tab from './components/Section3Tab';
 
 const Section3 = () => {
   const [category, setCategory] = useState('0');

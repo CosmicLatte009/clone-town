@@ -1,4 +1,4 @@
-@import '../../style/color';
+@import '../../../style/color';
 
 .section {
   left: 80px;
@@ -29,7 +29,7 @@
 .frame {
   width: 150%;
   height: 100%;
-  background-image: url(./components/section3/computer.png);
+  background-image: url(./components/computer.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin: 20% auto;
