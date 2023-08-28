@@ -327,3 +327,46 @@
     width: 100%;
   }
 }
+
+@media (max-width: 770px) {
+  .requestContainer {
+    width: 100%;
+    height: 100%;
+    left: -35px;
+    top: 30px;
+  }
+
+  .requestLeft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  li {
+    margin: 10px 0;
+    img {
+      display: none;
+    }
+    p {
+      text-align: center;
+      font-size: 1.4rem;
+      line-height: 20px;
+    }
+  }
+  .input_list {
+    width: 90%;
+    margin: 8% 0;
+    justify-content: flex-start;
+    padding: 0;
+    ul {
+      display: block;
+      width: 100%;
+      margin: 0;
+      li {
+        margin: 0 0 40px 0;
+        width: 100%;
+      }
+    }
+  }
+}
