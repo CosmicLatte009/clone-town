@@ -133,3 +133,65 @@
     }
   }
 }
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .portWarpper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portWarpper {
+    width: 95%;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .port1,
+  .port2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 5% 10%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .company_imgWrapper {
+    width: 100%;
+    height: 280px;
+  }
+
+  .company_contentWrapper {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .company_tagWrapper {
+    justify-content: center;
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 0;
+    }
+  }
+}
