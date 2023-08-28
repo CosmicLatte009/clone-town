@@ -5,9 +5,7 @@ import Slide from './Slide';
 const Carousel = () => {
   const data = Data.data;
 
-  return (
-
-  );
+  return <></>;
 };
 
 export default Carousel;
