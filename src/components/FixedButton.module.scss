@@ -1,0 +1,142 @@
+@media screen and (max-width: 767px){
+    .FixedButtons{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .FixedButtons{
+        display: block;
+        cursor: pointer;
+    }
+    .TopButton{
+        position: fixed;
+        z-index: 7000;
+        bottom: 120px;
+        right: 3%;
+        transition: all 0.5s;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.15);
+        background: white;
+    }
+    .TopButton>a{
+        display: block;
+    }
+    .TopUp{
+        position: absolute;
+        cursor: pointer;
+        top: 25px;
+        left: 19px;
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin: 0;
+    }
+    .TopUp>span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        background: #dc6868;
+    }
+    .TopUp>span:first-child{
+        transform: translateX(-6px) rotate(135deg);
+        height: 5px;
+        width: 100%;
+    }
+    .TopUp>span:last-child{
+        transform: translateX(6px) rotate(-135deg);
+        height: 5px;
+        width: 100%;
+    }
+
+    .QuickButton{
+        background: rgb(255, 255, 255);
+        position: fixed;
+        z-index: 7000;
+        bottom: 40px;
+        right: 3%;
+        transition: all 0.5s;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.15);
+    }
+    .Stretch{
+        background: rgb(220, 104, 104);
+        width: 220px;
+        border-radius: 30px;
+    }
+    .QuickPlus{
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: 16px;
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin: 0;
+        transition: all 0.5s;
+    }
+    .PlusWrap{
+        position: relative;
+        top: -15px;
+        left: 0;
+        width: 28px;
+        height: 28px;
+        transition: all 0.5s;
+    }
+    .Stretch .PlusWrap{
+        transform: rotate(135deg);
+        transform-origin: center center;
+    }
+    .Stretch .PlusWrap>span{
+        background: rgb(255, 255, 255);
+    }
+    .PlusWrap>span{
+        background: rgb(220, 104, 104);
+        position: absolute;
+        top: 12px;
+        left: 0;
+        border-radius: 5px;
+
+        height: 5px;
+        width: 100%;
+    }
+    .PlusWrap>span:first-child{
+        transform: translateY(0) rotate(-180deg);
+    }
+    .PlusWrap>span:last-child{
+        transform: translateY(0) rotate(90deg);
+    }
+
+    .QuickLink{
+        display: none;
+    }
+    .Stretch .QuickLink{
+        position: absolute;
+        z-index: 7001;
+        right: 50px;
+        top: calc(50% - 10px);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .QuickLink>a{
+        height: 100%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        margin-right: 8px;
+
+        word-break: keep-all;
+    }
+    .QuickLink>a:first-child{
+        border-right: 2px solid #fff;
+        padding-right: 8px;
+    }
+}
