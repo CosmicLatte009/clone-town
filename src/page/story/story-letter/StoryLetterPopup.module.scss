@@ -1,0 +1,59 @@
+@use '/src/style/color';
+@use '/src/style/font';
+@use '/src/style/util';
+
+.Container {
+  position: fixed;
+  z-index: 9998;
+  width: calc(100% - 80px);
+  height: 100vh;
+  top: 0;
+  left: 80px;
+  bottom: -100vh;
+  padding: 10% 5%;
+  background: white;
+  overflow-y: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CloseBtn {
+  position: absolute;
+  z-index: 9999;
+  cursor: pointer;
+  top: 30px;
+  right: 5%;
+  display: block;
+  margin: 0;
+  background-color: transparent;
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.TitleWrap {
+  display: flex;
+  flex-direction: column;
+  .Vol {
+    @include font.typo(font.$IBM, regular, 20px, 27.68px);
+    margin: 10px 0;
+    & img {
+      width: 18px;
+      margin-right: 5px;
+    }
+  }
+
+  .Title {
+    @include font.typo(font.$IBM, bold, 40px, 1.4);
+  }
+
+  .Date {
+    @include font.typo(font.$IBM, regular, 18px, 22.4px);
+    margin: 20px 0 50px;
+  }
+}
+
+.Desc {
+  margin-right: util.rem(120px);
+}

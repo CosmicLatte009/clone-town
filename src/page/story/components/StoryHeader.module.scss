@@ -1,0 +1,78 @@
+@use '/src/style/font';
+@use '/src/style/color';
+@use '/src/style/util';
+
+.HeaderWrap {
+  width: 100%;
+  height: calc(var(--s_vh, 1vh) * 100);
+  color: #ffffff;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+
+  & nav {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+    z-index: -1;
+  }
+
+  .TitleWrap {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Title {
+    @include font.typo(font.$laila, bold, 10rem, 140px);
+  }
+}
+
+.NoticePage {
+  &::before {
+    background-image: url('../../../../public/assets/img/rc-story/story_notice.jpg');
+  }
+}
+
+.LetterPage {
+  &::before {
+    background-image: url('../../../../public/assets/img/rc-story/story_news.jpg');
+  }
+}
+
+.StudyPage {
+  &::before {
+    background-image: url('../../../../public/assets/img/rc-story/story_talk.jpg');
+  }
+}
+
+.Category {
+  @include font.typo(font.$IBM, bold, 3rem, 42px);
+  margin-top: util.rem(30px);
+  position: relative;
+  z-index: 10;
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: color.$main-color;
+    clear: both;
+    display: block;
+    width: 110px;
+    height: 20px;
+    top: 20px;
+    left: calc(50% - 45px);
+    z-index: -2;
+
+  }
+}

@@ -1,0 +1,45 @@
+.container{
+    width: 30%;
+    color: #dc6868;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.BgImg{
+    position: absolute;
+    width: 72px;
+    height: 70px;
+    z-index: -2;
+    top: -30px;
+    left: -38px;
+    background: url('../../../../../public/assets/img/about_rc/rc_vision_pattern.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .container{
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .BgImg{
+        top: -10px;
+        left: calc(50% - 36px);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .container{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .container{
+        font-size: 2rem;
+    }
+}

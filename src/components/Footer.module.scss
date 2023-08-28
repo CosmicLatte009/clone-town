@@ -1,0 +1,78 @@
+@use '/src/style/color';
+@use '/src/style/font';
+
+.FooterWrap {
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #585858;
+  @include font.typo(font.$IBM, regular, 18px, 22.39px);
+  color: color.$main-text-gray-color;
+  padding: 3% 10%;
+}
+
+.LogoWrap {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  .SoftLabsLogo {
+    width: 300px;
+    height: 80px;
+  }
+  .NaverBlogLogo {
+    width: 120px;
+  }
+}
+
+.Locate {
+  & a {
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  & img {
+    width: 16px;
+  }
+}
+
+.ContactWrap {
+  width: 728px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ContactLeft {
+  width: 271.36px;
+
+  & li {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & span:first-of-type {
+      width: 72px;
+    }
+  }
+}
+
+.ContactRight {
+  width: 350px;
+
+  & li {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & span:first-of-type {
+      width: 115px;
+    }
+  }
+}
