@@ -13,7 +13,6 @@ import StoryNoticePage from './page/story/story-notice/StoryNoticePage';
 import StoryLetterPage from './page/story/story-letter/StoryLetterPage';
 import StoryStudyPage from './page/story/story-study/StoryStudyPage';
 
-
 function App() {
   return (
     <BrowserRouter>
