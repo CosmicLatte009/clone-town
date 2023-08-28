@@ -2,20 +2,20 @@
 @use '/src/style/font';
 
 .Wrap {
-  width: 1824px;
-  min-width: 432px;
+  width: 100%;
   border-top: 3px solid rgb(112, 112, 112);
+  max-width: 1830px;
+  min-width: 432px;
 }
 
 .List {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
   border-bottom: 1px solid #707070;
   cursor: pointer;
-  &::hover {
+  &:hover {
     background-color: rgb(242, 242, 242);
   }
 }
@@ -24,28 +24,53 @@
   color: #0d0d0d;
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  width: 10%;
   & strong {
     @include font.typo(font.$IBM, bold, 4.8rem, 67.2px);
+    @include util.tablet-screen {
+      @include font.typo(font.$IBM, bold, 4rem, 67.2px);
+    }
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, bold, 3.6rem, 67.2px);
+    }
   }
 
   & span {
     @include font.typo(font.$IBM, regular, 1.5rem, 21px);
+    @include util.tablet-screen {
+      @include font.typo(font.$IBM, regular, 1.3rem, 21px);
+    }
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, regular, 1.3rem, 21px);
+    }
   }
 }
 
 .Title {
-  @include font.typo(font.$IBM, regular, 20px, 24px);
-  & span {
-    min-width: util.rem(312px);
+  @include font.typo(font.$IBM, regular, 20px, 2.4rem);
+  width: 75%;
+  word-break: keep-all;
+
+  @include util.tablet-screen {
+    width: 75%;
+    margin-left: 22px;
+  }
+  @include util.mobile-screen {
+    width: 90%;
+    margin-left: 22px;
   }
 }
 
 .PlusBtn {
+  position: absolute;
+  right: 60px;
   padding: util.rem(20px) util.rem(30px);
   background-color: transparent;
   cursor: pointer;
   & img {
     width: 18px;
+  }
+  @include util.mobile-screen {
+    right: -5px;
   }
 }
