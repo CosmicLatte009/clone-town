@@ -30,7 +30,7 @@ function App() {
         <Route path="/story-letter" element={<StoryLetterPage />} />
         <Route path="/story-study" element={<StoryStudyPage />} />
         <Route path="/contact-request" element={<RequestPage />} />
-        <Route path="/contact" element={<ApplyPage />} />
+        <Route path="/contact-apply" element={<ApplyPage />} />
       </Routes>
     </BrowserRouter>
   );
