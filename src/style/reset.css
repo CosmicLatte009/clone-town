@@ -134,9 +134,3 @@ button {
   width: auto;
   overflow: visible;
 }
-a,
-a:visited,
-a:hover {
-  text-decoration: none;
-  /* color: inherit; */
-}

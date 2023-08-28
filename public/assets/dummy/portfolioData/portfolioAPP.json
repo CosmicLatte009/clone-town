@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "img": "/assets/img/portfolioPage/company/line_way.jpg",
+      "Summary": "동영상 기반 뷰티 쇼핑몰",
+      "name": "라인웨이",
+      "color": ["#52EC8A", "#59626A", "#FFF"],
+      "url": "https://www.lineway.co.kr/",
+      "tag": ["하이브리드 앱", "건강/뷰티 쇼핑몰", "뷰티/헬스"]
+    },
+    {
+      "img": "/assets/img/portfolioPage/company/che_duler.png",
+      "Summary": "일잘러들을 위한 스마트 스케줄러",
+      "name": "케:줄러",
+      "color": ["#fad94f", "#6d4be5"],
+      "url": "https://kezuler.com/login",
+      "tag": ["구글켈린더API", "KAKAO_OAUTCH_API", "리뉴얼", "스케줄러"]
+    },
+    {
+      "img": "/assets/img/portfolioPage/company/love_schemar.jpg",
+      "Summary": "",
+      "name": "러브스캐머 스캐너",
+      "color": ["#1682CB", "#DC473A", "#FFF"],
+      "url": "https://lovecrime.co.kr/",
+      "tag": ["관리자 웹", "반응형 웹", "모바일 웹앱", "IT서비스", "시스템개발"]
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+@import '../../../style/color';
+
+.applyContainer {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.apply {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 6% 2% 0;
+  width: 100%;
+  height: 100%;
+}
+
+.applyRight {
+  padding: 3% 20px 0;
+}
+
+.applyLeft {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  li {
+    margin: 10px 0;
+    img {
+      width: 100px;
+      margin-top: 20px;
+    }
+    p {
+      text-align: center;
+      font-size: 1.4rem;
+      line-height: 20px;
+    }
+  }
+}
+
+.title {
+  font-size: 3.2rem;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Laila', sans-serif;
+  padding: 0 10px;
+  border-bottom: 3px solid #888;
+}
+
+.apply_text {
+  text-indent: 10px;
+  color: #666;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.input_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 0 30px;
+  }
+  li {
+    width: 45%;
+    label {
+      display: block;
+      line-height: normal;
+      cursor: pointer;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.apply_input {
+  border-bottom: 2px solid #a7a7a7;
+  color: #b6b6b6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+}
+.apply_input:focus {
+  outline: none;
+}
+
+.applyRight {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.upload {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  li {
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+    }
+    & > li:last-child {
+      display: flex;
+    }
+    & > li {
+      display: flex;
+    }
+    & > li:first-child {
+      label {
+        width: 120px;
+        padding-left: 10px;
+      }
+    }
+
+    textarea {
+      padding: 10px 10px;
+      &::placeholder {
+        color: #b6b6b6;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.project_nameLabel {
+  width: 120px;
+  padding-left: 10px;
+}
+
+.project_name {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #b6b6b6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 2px solid #a7a7a7;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.project_detailLabel {
+  display: block;
+  font-size: 1.4rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.text_area:focus {
+  border-bottom: 2px solid $main-color;
+}
+
+.text_area {
+  resize: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #a7a7a7;
+  outline: none;
+  color: #b6b6b6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: inherit;
+  width: 100%;
+}
+
+.project_file {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #b6b6b6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 2px solid #a7a7a7;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.apply_policyIn {
+  display: flex;
+  .checkBox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    left: 0;
+    top: 2px;
+    background-color: #eaeaea;
+    border-radius: 2px;
+  }
+  label {
+    cursor: pointer;
+    padding-left: 30px;
+    color: #333;
+    a {
+      font-weight: bold;
+      color: #333;
+    }
+  }
+}
+
+.apply_policy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 100px;
+  text-align: center;
+}
+
+.policyBtn {
+  margin-top: 20px;
+  border: 2px solid $main-color;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: $main-color;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.file_input_div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  right: 20px;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 2.4rem;
+    color: #dc6868;
+    cursor: pointer;
+  }
+}
+
+.select_option {
+  width: 90%;
+  height: 60px;
+  background: #f4f4f4;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.select_option_in {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    li {
+      color: #999;
+      label {
+        display: inline-block;
+        position: relative;
+        padding-left: 26px;
+        cursor: pointer;
+        bottom: 12px;
+      }
+    }
+  }
+}
+
+.careerBox {
+  width: 100%;
+  .careerBox_in {
+    width: 100%;
+    margin-bottom: 20px;
+    // margin-top: 40px;
+    ul {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      li {
+        color: #999999;
+        margin-right: 22px;
+        label {
+          display: inline-block;
+          position: relative;
+          padding-right: 26px;
+          padding-left: 26px;
+          cursor: pointer;
+          .careerBox_input {
+            width: 40px;
+            margin-left: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #666;
+            padding: 2px 5px;
+            border: none;
+            border-bottom: 2px solid #a7a7a7;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.career_check {
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  background-color: $main-color;
+}
+
+.file_input_div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  right: 20px;
+  img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    font-size: 2.4rem;
+    color: #dc6868;
+    cursor: pointer;
+    width: 25px;
+  }
+}
+
+.fileInput {
+  display: flex;
+}
+
+.required_mark {
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background-color: $main-color;
+}

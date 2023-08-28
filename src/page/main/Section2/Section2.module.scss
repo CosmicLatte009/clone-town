@@ -1,0 +1,553 @@
+.MainPage2{
+    height: calc(var(--vh, 1vh) * 100);
+
+    left: 80px;
+    font-size: 1.6rem;
+    width: calc(100% - 80px);
+
+    word-break: keep-all;
+}
+
+.Container{
+    width: 100%;
+    height: 100%;
+}
+
+.Wrap{
+    width: 100%;
+    height: 100%;
+}
+
+.TextRotate{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    animation: text_rotate 10s linear infinite;
+}
+
+@keyframes text_rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.TextRotate>span{
+    font-size: 5rem;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center center;
+    text-shadow: 1.5px 1.5px 0 #A7A7A7, -1.5px -1.5px 0 #A7A7A7, -1.5px 1.5px 0 #A7A7A7, 1.5px -1.5px 0 #A7A7A7, 0 1.5px 0 #A7A7A7, 0 -1.5px 0 #A7A7A7, 1.5px 0 0 #A7A7A7, -1.5px 0 0 #A7A7A7, 1px 1.5px 0 #A7A7A7, 1px -1.5px 0 #A7A7A7, 1.5px 1px 0 #A7A7A7, -1.5px 1px 0 #A7A7A7, -1px 1.5px 0 #A7A7A7, -1px -1.5px 0 #A7A7A7, 1.5px -1px 0 #A7A7A7, -1.5px -1px 0 #A7A7A7, 0 0 0 #A7A7A7, 1px 1px 0 #A7A7A7, -1px -1px 0 #A7A7A7, -1px 0px 0 #A7A7A7, 0px -1px 0 #A7A7A7, 0px 1px 0 #A7A7A7, 1px 0px 0 #A7A7A7, 1px -1px 0 #A7A7A7, -1px 1px 0 #A7A7A7;
+
+    &:nth-child(1){
+        transform: rotate(-68deg) translate(-61px, -13px);
+    }
+    &:nth-child(2){
+        transform: rotate(-43deg) translate(10px, 0px);
+    }
+    &:nth-child(3){
+        transform: rotate(-19deg) translate(81px, -20px);
+    }
+    &:nth-child(4){
+        transform: rotate(3deg) translate(135px, -62px);    
+    }
+    &:nth-child(5){
+        transform: rotate(28deg) translate(166px, -127px);    
+    }
+    &:nth-child(6){
+        transform: rotate(54deg) translate(169px, -208px);    
+    }
+    &:nth-child(7){
+        font-size: 4rem;
+        transform: rotate(76deg) translate(158px, -279px);    
+    }
+    &:nth-child(8){
+        transform: rotate(97deg) translate(114px, -321px);    
+    }
+    &:nth-child(9){
+        transform: rotate(120deg) translate(45px, -347px);    
+    }
+    &:nth-child(10){
+        transform: rotate(140deg) translate(-20px, -354px);    
+    }
+    &:nth-child(11){
+        transform: rotate(161deg) translate(-88px, -333px);    
+    }
+    &:nth-child(12){
+        transform: rotate(180deg) translate(-134px, -297px);    
+    }
+    &:nth-child(13){
+        transform: rotate(199deg) translate(-160px, -247px);    
+    }
+    &:nth-child(14){
+        transform: rotate(218deg) translate(-170px, -193px);    
+    }
+    &:nth-child(15){
+        transform: rotate(237deg) translate(-164px, -134px);    
+    }
+    &:nth-child(16){
+        font-size: 4rem;
+        transform: rotate(264deg) translate(-140px, -60px);    
+    }
+}
+
+.MainImg2{
+    width: 80%;
+    height: 500px;
+    background-image: url('../../../../public/assets/img/main_banner/main_page2_img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 0;
+    
+    &::before{
+        content: "젊은 생각이 만드는 IT 세상, 알씨타운";
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: #dc6868;
+        position: absolute;
+        top: -13%;
+        left: -8%;
+    }
+}
+
+.TextBox{
+    width: 60%;
+    height: 240px;
+    background: #FFEBE1;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.InnerBox{
+    margin-top: 1.5rem;
+    padding: 0 10rem;
+}
+
+.InnerBox>p{
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+.InnerBox>button{
+    margin-top: 20px;
+    border: 2px solid #dc6868;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #dc6868;
+    background: transparent;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    a{
+        color: #dc6868;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .MainPage2{
+        left: 0;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .Container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .Wrap{
+        height: calc(100% - 60px);
+    }
+    .TextRotate{
+        width: 150px;
+        height: 150px;
+    }
+    .TextRotate>span{
+        font-size: 2rem;
+        font-weight: 700;
+        transform-origin: center center;
+        text-shadow: 1px 1px 0 #A7A7A7, -1px -1px 0 #A7A7A7, -1px 0px 0 #A7A7A7, 0px -1px 0 #A7A7A7, 0px 1px 0 #A7A7A7, 1px 0px 0 #A7A7A7, 1px -1px 0 #A7A7A7, -1px 1px 0 #A7A7A7;
+
+        &:nth-child(1){
+            transform: rotate(-73deg) translate(-36px, -4px);
+        }
+        &:nth-child(2){
+            transform: rotate(-60deg) translate(-6px, 3px);
+        }
+        &:nth-child(3){
+            transform: rotate(-38deg) translate(26px, 3px);
+        }
+        &:nth-child(4){
+            transform: rotate(-18deg) translate(56px, -8px); 
+        }
+        &:nth-child(5){
+            transform: rotate(11deg) translate(78px, -40px);  
+        }
+        &:nth-child(6){
+            transform: rotate(35deg) translate(92px, -76px);   
+        }
+        &:nth-child(7){
+            font-size: 2.4rem;
+            transform: rotate(79deg) translate(45px, -137px);   
+        }
+        &:nth-child(8){
+            transform: rotate(92deg) translate(50px, -158px);  
+        }
+        &:nth-child(9){
+            transform: rotate(114deg) translate(19px, -172px);   
+        }
+        &:nth-child(10){
+            transform: rotate(134deg) translate(-11px, -176px);   
+        }
+        &:nth-child(11){
+            transform: rotate(148deg) translate(-22px, -173px);   
+        }
+        &:nth-child(12){
+            transform: rotate(177deg) translate(-72px, -150px);  
+        }
+        &:nth-child(13){
+            transform: rotate(200deg) translate(-93px, -120px);  
+        }
+        &:nth-child(14){
+            transform: rotate(219deg) translate(-98px, -91px);    
+        }
+        &:nth-child(15){
+            transform: rotate(236deg) translate(-90px, -64px);   
+        }
+        &:nth-child(16){
+            font-size: 2.4rem;
+            transform: rotate(259deg) translate(-69px, -30px);  
+        }
+    }
+    .MainImg2{
+        height: 450px;
+        top: calc(50% - 225px);
+        background-position: right center;
+
+        &::before{
+            font-size: 1.8rem;
+            top: -10%;
+            left: -5%;
+        }
+    }
+    .TextBox{
+        width: 80%;
+        height: 260px;
+    }
+    .InnerBox{
+        margin-top: 1rem;
+        padding: 0 3rem;
+    }
+    .InnerBox>p{
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+    }
+    .InnerBox>button{
+        margin-top: 16px;
+        border: 2px solid #dc6868;
+        border-radius: 10px;
+        padding: 10px 20px;
+        transition: all 0.3s;
+        cursor: pointer;
+        color: #dc6868;
+        background: transparent;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .MainPage2{
+        left: 0;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    .Container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .Wrap{
+        height: calc(100% - 50px);
+    }
+    .TextRotate{
+        width: 150px;
+        height: 150px;
+    }
+    .TextRotate>span{
+        font-size: 2rem;
+        font-weight: 700;
+        transform-origin: center center;
+        text-shadow: 1px 1px 0 #A7A7A7, -1px -1px 0 #A7A7A7, -1px 0px 0 #A7A7A7, 0px -1px 0 #A7A7A7, 0px 1px 0 #A7A7A7, 1px 0px 0 #A7A7A7, 1px -1px 0 #A7A7A7, -1px 1px 0 #A7A7A7;
+
+        &:nth-child(1){
+            transform: rotate(-73deg) translate(-36px, -4px);
+        }
+        &:nth-child(2){
+            transform: rotate(-60deg) translate(-6px, 3px);
+        }
+        &:nth-child(3){
+            transform: rotate(-38deg) translate(26px, 3px);
+        }
+        &:nth-child(4){
+            transform: rotate(-18deg) translate(56px, -8px);  
+        }
+        &:nth-child(5){
+            transform: rotate(11deg) translate(78px, -40px);   
+        }
+        &:nth-child(6){
+            transform: rotate(35deg) translate(92px, -76px);   
+        }
+        &:nth-child(7){
+            font-size: 2.4rem;
+            transform: rotate(79deg) translate(45px, -137px);  
+        }
+        &:nth-child(8){
+            transform: rotate(92deg) translate(50px, -158px);   
+        }
+        &:nth-child(9){
+            transform: rotate(114deg) translate(19px, -172px);  
+        }
+        &:nth-child(10){
+            transform: rotate(134deg) translate(-11px, -176px);   
+        }
+        &:nth-child(11){
+            transform: rotate(148deg) translate(-22px, -173px);   
+        }
+        &:nth-child(12){
+            transform: rotate(177deg) translate(-72px, -150px);   
+        }
+        &:nth-child(13){
+            transform: rotate(200deg) translate(-93px, -120px);   
+        }
+        &:nth-child(14){
+            transform: rotate(219deg) translate(-98px, -91px);    
+        }
+        &:nth-child(15){
+            transform: rotate(236deg) translate(-90px, -64px);   
+        }
+        &:nth-child(16){
+            font-size: 2.4rem;
+            transform: rotate(259deg) translate(-69px, -30px);  
+        }
+    }
+    .MainImg2::before{
+        font-size: 2.4rem;
+        left: 0;
+    }
+    .TextBox{
+        width: 80%;
+    }
+    .InnerBox{
+        margin-top: 1rem;
+        padding: 0 6rem;
+    }
+    .InnerBox>p{
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+    }
+    .InnerBox>button{
+        margin-top: 16px;
+        border: 2px solid #dc6868;
+        border-radius: 10px;
+        padding: 10px 20px;
+        transition: all 0.3s;
+        cursor: pointer;
+        color: #dc6868;
+        background: transparent;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .Container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .Wrap{
+        height: calc(100% - 200px);
+    }
+    .TextRotate{
+        width: 230px;
+        height: 230px;
+        top: 0;
+        left: 0;
+    }
+    .TextRotate>span{
+        font-size: 3.6rem;
+        font-weight: 700;
+        transform-origin: center center;
+        text-shadow: 1px 1px 0 #A7A7A7, -1px -1px 0 #A7A7A7, -1px 0px 0 #A7A7A7, 0px -1px 0 #A7A7A7, 0px 1px 0 #A7A7A7, 1px 0px 0 #A7A7A7, 1px -1px 0 #A7A7A7, -1px 1px 0 #A7A7A7;
+    }
+    .MainImg2{
+        height: 450px;
+        top: calc(50% - 225px);
+
+        &::before{
+            font-size: 3.6rem;
+        }
+    }
+    .TextBox{
+        width: 80%;
+        bottom: 0;
+    }
+    .InnerBox{
+        padding: 0 6rem;
+    }
+    .InnerBox>p{
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    .InnerBox>button{
+        margin-top: 16px;
+        border: 2px solid #dc6868;
+        border-radius: 10px;
+        padding: 10px 20px;
+        transition: all 0.3s;
+        cursor: pointer;
+        color: #dc6868;
+        background: transparent;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    .Container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .Wrap{
+        height: calc(100% - 200px);
+    }
+    .TextRotate{
+        width: 230px;
+        height: 230px;
+        top: 0;
+        left: 5%;
+    }
+    .TextRotate>span{
+        font-size: 3.6rem;
+        font-weight: 700;
+        transform-origin: center center;
+        text-shadow: 1px 1px 0 #A7A7A7, -1px -1px 0 #A7A7A7, -1px 0px 0 #A7A7A7, 0px -1px 0 #A7A7A7, 0px 1px 0 #A7A7A7, 1px 0px 0 #A7A7A7, 1px -1px 0 #A7A7A7, -1px 1px 0 #A7A7A7;
+    }
+    .MainImg2{
+        height: 450px;
+        top: calc(50% - 225px);
+
+        &::before{
+            font-size: 4rem;
+        }
+    }
+    .TextBox{
+        width: 70%;
+        bottom: 0;
+    }
+    .InnerBox{
+        margin-top: 1rem;
+    }
+    .InnerBox>p{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1400px){
+    .TextRotate{
+        top: 5%;
+        left: 5%;
+    }
+    .MainImg2{
+        height: 450px;
+        top: calc(50% - 225px);
+
+        &::before{
+            font-size: 4rem;
+        }
+    }
+    .TextBox{
+        width: 70%;
+    }
+    .InnerBox{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px){
+    .TextRotate>span{
+        &:nth-child(1){
+            transform: rotate(-95deg) translate(-100px, -37px);
+        }
+        &:nth-child(2){
+            transform: rotate(-76deg) translate(-63px, -10px);
+        }
+        &:nth-child(3){
+            transform: rotate(-56deg) translate(-14px, 5px);
+        }
+        &:nth-child(4){
+            transform: rotate(-26deg) translate(35px, -6px);   
+        }
+        &:nth-child(5){
+            transform: rotate(-14deg) translate(84px, -19px);   
+        }
+        &:nth-child(6){
+            transform: rotate(14deg) translate(122px, -70px);  
+        }
+        &:nth-child(7){
+            font-size: 3.4rem;
+            transform: rotate(47deg) translate(123px, -145px);    
+        }
+        &:nth-child(8){
+            transform: rotate(75deg) translate(87px, -205px);    
+        }
+        &:nth-child(9){
+            transform: rotate(84deg) translate(95px, -223px);   
+        }
+        &:nth-child(10){
+            transform: rotate(100deg) translate(77px, -249px);  
+        }
+        &:nth-child(11){
+            transform: rotate(125deg) translate(11px, -267px);   
+        }
+        &:nth-child(12){
+            transform: rotate(144deg) translate(-27px, -265px);   
+        }
+        &:nth-child(13){
+            transform: rotate(167deg) translate(-76px, -240px);   
+        }
+        &:nth-child(14){
+            transform: rotate(190deg) translate(-111px, -201px);   
+        }
+        &:nth-child(15){
+            transform: rotate(221deg) translate(-150px, -130px);   
+        }
+        &:nth-child(16){
+            font-size: 3.4rem;
+            transform: rotate(235deg) translate(-123px, -98px);  
+        }
+    }
+}

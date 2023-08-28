@@ -1,5 +1,11 @@
+import MainBannerSection from './main/components/MainBannerSection';
+
 const HomePage = () => {
-  return <div>홈페이지 더미페이지</div>;
+  return (
+    <>
+      <MainBannerSection />
+    </>
+  );
 };
 
 export default HomePage;
