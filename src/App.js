@@ -15,16 +15,10 @@ import StoryNoticePage from './page/story/story-notice/StoryNoticePage';
 import StoryLetterPage from './page/story/story-letter/StoryLetterPage';
 import StoryStudyPage from './page/story/story-study/StoryStudyPage';
 
-import Section4 from './page/main/Section4/Section4';
-import Section3 from './page/main/Section3/Section3';
-
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Section3 />
-        <Section4 />
-
         <Nav />
         <FixedButton />
         <MobileFixedButton />
