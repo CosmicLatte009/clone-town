@@ -9,10 +9,12 @@ const MainStoryCard = ({ title, children, to }) => {
   }`;
   return (
     <li className={styles.ListWrap}>
-      <span className={styles.Title}>{title}</span>
       <div className={cardWrapClass}>
-        <div className={styles.DescWrap}>
-          <p className={styles.Desc}>{children}</p>
+        <span className={styles.Title}>{title}</span>
+        <div className={styles.BottomWrap}>
+          <div className={styles.DescWrap}>
+            <p className={styles.Desc}>{children}</p>
+          </div>
           <button className={styles.Btn}>
             <Link to={to}>자세히 보러가기</Link>
           </button>
