@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './Section3Tab.module.scss';
 
 const Section3Tab = ({ category }) => {
@@ -37,9 +39,7 @@ const Section3Tab = ({ category }) => {
           </div>
         </div>
         <div className={styles.btn_wrap}>
-          <button>
-            <a href="https://www.rctown.co.kr/service.php">더 알아보기</a>
-          </button>
+          <button>{/* <Link to="/service">더 알아보기</Link> */}</button>
         </div>
       </div>
     </div>
