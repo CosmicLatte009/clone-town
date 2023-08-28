@@ -3,18 +3,84 @@
 @use '/src/style/util';
 
 .MainWrap {
-  margin: 100px 170.792px 150px;
-  max-width: 1830px;
+  width: calc(100% - 80px);
+  left: 80px;
+  padding-bottom: 150px;
+
+  @include util.mobile-screen {
+    left: 0;
+    margin-top: util.rem(400px);
+  }
+
+  & > div {
+    margin: 100px 10%;
+    @include util.mobile-screen {
+      width: 100%;
+      margin: 100px 5%;
+    }
+  }
+
   & h2 {
     @include font.typo(font.$IBM, 700, 7.2rem, 1.4);
     color: color.$main-text-gray-color;
     word-break: keep-all;
   }
-  & p {
 
+  & p {
     @include font.typo(font.$IBM, regular, 2.4rem, 1.4);
     color: #707070;
     margin: util.rem(40px) 0 100px;
     min-width: util.rem(432px);
+  }
+}
+
+.NoticePage {
+  & h2 {
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, 700, 6.5rem, 1.4);
+    }
+  }
+  & p {
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, regular, 2rem, 1.4);
+    }
+  }
+}
+
+.LetterPage {
+  & > div {
+    @include util.mobile-screen {
+      margin: 100px 10%;
+    }
+  }
+  & h2 {
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, 700, 4rem, 1.4);
+    }
+  }
+  & p {
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, regular, 1.6rem, 2.5rem);
+      word-break: keep-all;
+    }
+  }
+}
+
+.StudyPage {
+  & > div {
+    @include util.mobile-screen {
+      margin: 100px 10%;
+    }
+  }
+  & h2 {
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, 700, 4rem, 1.4);
+    }
+  }
+  & p {
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, regular, 1.6rem, 2.5rem);
+      word-break: keep-all;
+    }
   }
 }

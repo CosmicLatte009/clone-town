@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import StoryNav from './StoryNav';
+import Scroll from '../../../components/Scroll';
 import styles from './StoryHeader.module.scss';
 
 const StoryHeader = ({ children }) => {
@@ -15,13 +16,17 @@ const StoryHeader = ({ children }) => {
   }`;
 
   return (
-    <header className={headerClass}>
+    <>
+      <header className={headerClass}>
+        <div className={styles.TitleWrap}>
+          <h1 className={styles.Title}>RC STORY</h1>
+          <span className={styles.Category}>{children}</span>
+        </div>
+        <Scroll />
+      </header>
       <StoryNav />
-      <div className={styles.TitleWrap}>
-        <h1 className={styles.Title}>RC STORY</h1>
-        <span className={styles.Category}>{children}</span>
-      </div>
-    </header>
+      <span className={styles.MediaQueryTitle}>RC STORY</span>
+    </>
   );
 };
 

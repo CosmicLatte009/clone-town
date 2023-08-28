@@ -36,6 +36,14 @@
 
   .Title {
     @include font.typo(font.$laila, bold, 10rem, 140px);
+
+    @include util.tablet-screen {
+      @include font.typo(font.$laila, bold, 8rem, 112px);
+    }
+
+    @include util.mobile-screen {
+      @include font.typo(font.$laila, bold, 7.5rem, 105px);
+    }
   }
 }
 
@@ -73,6 +81,18 @@
     top: 20px;
     left: calc(50% - 45px);
     z-index: -2;
+  }
+}
 
+.MediaQueryTitle {
+  @include font.typo(font.$laila, bold, 50px, 70px);
+  color: color.$main-color;
+  display: none;
+
+  @include util.mobile-screen {
+    display: block;
+    position: absolute;
+    top: 1280px;
+    left: 25%;
   }
 }
