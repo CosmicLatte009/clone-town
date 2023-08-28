@@ -15,6 +15,26 @@
   overflow-y: auto;
   display: flex;
   justify-content: space-between;
+  word-break: keep-all;
+
+  @include util.tablet-screen {
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include util.mobile-screen {
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
 }
 
 .CloseBtn {
@@ -35,25 +55,63 @@
 .TitleWrap {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  margin: 0 20%;
+
   .Vol {
     @include font.typo(font.$IBM, regular, 20px, 27.68px);
     margin: 10px 0;
+    white-space: nowrap;
+
     & img {
       width: 18px;
       margin-right: 5px;
+    }
+
+    @include util.tablet-screen {
+      @include font.typo(font.$IBM, regular, 18px, 27.68px);
+    }
+
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, regular, 18px, 27.68px);
     }
   }
 
   .Title {
     @include font.typo(font.$IBM, bold, 40px, 1.4);
+
+    @include util.tablet-screen {
+      @include font.typo(font.$IBM, bold, 32px, 1.4);
+    }
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, bold, 32px, 1.4);
+    }
   }
 
   .Date {
     @include font.typo(font.$IBM, regular, 18px, 22.4px);
     margin: 20px 0 50px;
+
+    @include util.tablet-screen {
+      @include font.typo(font.$IBM, regular, 16px, 22.4px);
+      margin: 20px 0;
+    }
+
+    @include util.mobile-screen {
+      @include font.typo(font.$IBM, regular, 16px, 22.4px);
+      margin: 20px 0;
+    }
   }
 }
+.DescWrap {
+  margin-right: 15%;
 
-.Desc {
-  margin-right: util.rem(120px);
+  @include util.tablet-screen {
+    width: 60%;
+    margin: 50px 0 5%;
+  }
+  @include util.mobile-screen {
+    width: 60%;
+    margin: 50px 0 5%;
+  }
 }

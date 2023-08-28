@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import StoryNoticePopup from './StoryNoticePopup';
 import styles from './StoryNoticeLists.module.scss';
-import data from '../../../dummy/notice.json';
+import datas from '../../../dummy/story-notice.json';
 
 const StoryNoticeLists = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -14,7 +14,7 @@ const StoryNoticeLists = () => {
     setSelectedItem(null);
   };
 
-  const noticeData = data.notice;
+  const noticeData = datas.data;
 
   return (
     <>
