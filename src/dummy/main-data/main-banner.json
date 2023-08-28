@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "projectNum": "PROJECT.01",
+      "subTitle": "소상공인을 위한 백과사전",
+      "title": "상인백과",
+      "imgURL": "/assets/img/main_banner/banner_1.jpg"
+    },
+    {
+      "projectNum": "PROJECT.02",
+      "subTitle": "NFT 뮤지컬 티켓예매",
+      "title": "NFTSHOWBOX",
+      "imgURL": "/assets/img/main_banner/banner_2.jpg"
+    },
+    {
+      "projectNum": "PROJECT.03",
+      "subTitle": "국내 최초의 NFT 거래소",
+      "title": "NFTMANTA",
+      "imgURL": "/assets/img/main_banner/banner_3.jpg"
+    },
+    {
+      "projectNum": "PROJECT.04",
+      "subTitle": "한국인을 위한 최적화 맞춤형 베트남 여행 사이트",
+      "title": "클럽베트남",
+      "imgURL": "/assets/img/main_banner/banner_4.jpg"
+    },
+    {
+      "projectNum": "PROJECT.05",
+      "subTitle": "타오바오 직구대행 쇼핑몰",
+      "title": "타오바로",
+      "imgURL": "/assets/img/main_banner/banner_5.jpg"
+    },
+    {
+      "projectNum": "PROJECT.06",
+      "subTitle": "짤로 알아보는 나의 소비유형 테스트",
+      "title": "WYD : 소비TEST",
+      "imgURL": "/assets/img/main_banner/banner_6.jpg"
+    },
+    {
+      "projectNum": "PROJECT.07",
+      "subTitle": "국내 유일 신뢰기반 가사 서비스 APP",
+      "title": "대리주부",
+      "imgURL": "/assets/img/main_banner/banner_7.jpg"
+    }
+  ]
+}
