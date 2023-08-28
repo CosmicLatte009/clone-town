@@ -4,6 +4,8 @@ import HomePage from './page/HomePage';
 import AboutPage from './page/about/AboutPage';
 import ServicePage from './page/service/ServicePage';
 import PortfolioPage from './page/portfolioPage/PortfolioPage';
+import RequestPage from './page/contact/RequestPage';
+import ApplyPage from './page/contact/ApplyPage';
 import Nav from './page/nav/Nav';
 
 import FixedButton from './components/FixedButton';
@@ -27,6 +29,8 @@ function App() {
         <Route path="/story-notice" element={<StoryNoticePage />} />
         <Route path="/story-letter" element={<StoryLetterPage />} />
         <Route path="/story-study" element={<StoryStudyPage />} />
+        <Route path="/contact-request" element={<RequestPage />} />
+        <Route path="/contact-apply" element={<ApplyPage />} />
       </Routes>
     </BrowserRouter>
   );
