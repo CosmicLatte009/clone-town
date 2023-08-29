@@ -134,13 +134,13 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 1200px) {
+@media (min-width: 531px) and (max-width: 1200px) {
   .portWarpper {
     width: 80%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 530px) {
   .container {
     display: flex;
     flex-direction: column;
