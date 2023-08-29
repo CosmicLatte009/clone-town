@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78c697e6.css",
+    "main.js": "/static/js/main.027a626c.js",
+    "static/media/company.jpg": "/static/media/company.e8c3202e4d5cc9f52391.jpg",
+    "static/media/main_page2_img.jpg": "/static/media/main_page2_img.2357a84c51c12fcdeaf3.jpg",
+    "static/media/story_talk.jpg": "/static/media/story_talk.6be4bb5e12ce09d3aaad.jpg",
+    "static/media/story_news.jpg": "/static/media/story_news.d942f781f824f5bfe7d0.jpg",
+    "static/media/main_story1.jpg": "/static/media/main_story1.9999bb3fce8ff0da2fbb.jpg",
+    "static/media/service_main.jpg": "/static/media/service_main.b471fdb358408c30288b.jpg",
+    "static/media/rc_mission.jpg": "/static/media/rc_mission.d0810bf5cbc2ab075c70.jpg",
+    "static/media/story_notice.jpg": "/static/media/story_notice.7beaf3639301eb09689f.jpg",
+    "static/media/main_story3.jpg": "/static/media/main_story3.5f72634b1c3c49f14cae.jpg",
+    "static/media/computer.png": "/static/media/computer.77b57d9ce7672f3edb7d.png",
+    "static/media/main_story2.jpg": "/static/media/main_story2.e5b53db14148773673ac.jpg",
+    "static/media/about_background1.png": "/static/media/about_background1.c6398f0ab6d9c8d536ed.png",
+    "static/media/about_background2.png": "/static/media/about_background2.8dc237a8dd21d4c69be5.png",
+    "static/media/main5_background.png": "/static/media/main5_background.b401aea12c65ee43984c.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.78c697e6.css.map": "/static/css/main.78c697e6.css.map",
+    "main.027a626c.js.map": "/static/js/main.027a626c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78c697e6.css",
+    "static/js/main.027a626c.js"
+  ]
+}
