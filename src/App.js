@@ -10,6 +10,7 @@ import Nav from './page/nav/Nav';
 
 import FixedButton from './components/FixedButton';
 import MobileFixedButton from './components/MobileFixedButton';
+import Footer from './components/Footer';
 
 import StoryNoticePage from './page/story/story-notice/StoryNoticePage';
 import StoryLetterPage from './page/story/story-letter/StoryLetterPage';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/contact-request" element={<RequestPage />} />
           <Route path="/contact-apply" element={<ApplyPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
