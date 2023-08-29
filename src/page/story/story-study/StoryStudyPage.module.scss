@@ -9,18 +9,17 @@
 
   @include util.tablet-screen {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 85%;
-    margin: 0 auto;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   @include util.mobile-screen {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    width: 85%;
   }
 }
