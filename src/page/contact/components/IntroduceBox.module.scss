@@ -1,6 +1,8 @@
 @import '../../../style/color';
 
 .introduceContainer {
+  position: fixed;
+
   display: flex;
   align-items: start;
   justify-content: space-evenly;
@@ -73,5 +75,17 @@
 
   ul:first-child {
     margin-right: 70px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .introduceContainer {
+    padding: 0 4.5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .introduceContainer {
+    display: none;
   }
 }

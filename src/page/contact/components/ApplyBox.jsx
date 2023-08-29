@@ -7,7 +7,7 @@ const ApplyBox = () => {
   return (
     <div className={styles.applyContainer}>
       <ul className={styles.apply}>
-        <div className={styles.applyLeft}>
+        <ul className={styles.applyLeft}>
           <li>
             <span className={styles.title}>APPLY</span>
           </li>
@@ -15,9 +15,7 @@ const ApplyBox = () => {
             <p>
               알씨타운과 함께 할
               <br />
-              소중한 인재를 찾고
-              <br />
-              있습니다
+              소중한 인재를 찾고 있습니다
             </p>
           </li>
           <li>
@@ -31,7 +29,7 @@ const ApplyBox = () => {
             <span className={styles.required_mark}></span>
             필수 입력사항입니다.
           </li>
-        </div>
+        </ul>
         <div className={styles.applyRight}>
           <div className={styles.select_option}>
             <div className={styles.select_option_in}>

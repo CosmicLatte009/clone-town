@@ -5,7 +5,6 @@ import Section3Tab from './components/Section3Tab';
 
 const Section3 = () => {
   const [category, setCategory] = useState('0');
-  const IMG = 'web_img.jpg';
 
   const clickTabHandeler = (e) => {
     const seleted = e.target.value;

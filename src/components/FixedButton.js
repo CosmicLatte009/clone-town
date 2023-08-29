@@ -56,7 +56,7 @@ const FixedButton = () => {
               </div>
             </div>
             <div class={styles.QuickLink}>
-              <a href="/contact">문의하기</a>
+              <a href="/contact-request">문의하기</a>
               <a
                 href="https://page.stibee.com/subscriptions/119361"
                 target="_blank"

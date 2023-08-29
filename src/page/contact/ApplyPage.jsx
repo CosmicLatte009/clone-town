@@ -5,8 +5,8 @@ import styles from './ApplyPage.module.scss';
 function ApplyPage() {
   return (
     <div className={styles.container}>
+      <IntroduceBox />
       <div className={styles.applyBody}>
-        <IntroduceBox />
         <ApplyBox />
       </div>
     </div>

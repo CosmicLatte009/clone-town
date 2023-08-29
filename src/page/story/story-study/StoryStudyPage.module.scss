@@ -1,7 +1,25 @@
+@use '/src/style/util';
+
 .CardList {
   display: flex;
-  width: 2074px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include util.tablet-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @include util.mobile-screen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }

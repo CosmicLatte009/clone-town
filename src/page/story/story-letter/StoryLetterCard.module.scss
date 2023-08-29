@@ -25,8 +25,10 @@
   }
 
   & img {
-    max-width: 100%;
+    display: block;
+    width: 100%;
     height: auto;
+    object-fit: cover;
     transition: opacity 0.4s;
   }
 
@@ -35,11 +37,15 @@
   }
   color: #ffffff;
   word-break: keep-all;
+
+  @include util.mobile-screen {
+    margin: 10% 20px;
+  }
 }
 
 .Text {
   position: absolute;
-  bottom: 5%;
+  bottom: 20px;
   padding-left: 20px;
   opacity: 0;
 }

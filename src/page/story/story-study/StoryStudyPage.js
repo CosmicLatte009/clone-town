@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import StoryHeader from '../components/StoryHeader';
 import StoryMain from '../components/StoryMain';
 import StoryStudyCard from './StoryStudyCard';
-import data from '../../../dummy/story-study.json';
+import datas from '../../../dummy/story-study.json';
 import styles from './StoryStudyPage.module.scss';
 
 const StoryLetterPage = () => {
@@ -10,7 +10,7 @@ const StoryLetterPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const studyData = data.study;
+  const studyData = datas.data;
   return (
     <>
       <StoryHeader>RC STUDY</StoryHeader>

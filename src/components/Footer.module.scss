@@ -1,8 +1,11 @@
 @use '/src/style/color';
 @use '/src/style/font';
+@use '/src/style/util';
 
 .FooterWrap {
-  width: 100vw;
+  width: calc(100% - 80px);
+  height: 100%;
+  left: 80px;
   bottom: 0;
   display: flex;
   flex-direction: row;
@@ -12,21 +15,49 @@
   @include font.typo(font.$IBM, regular, 18px, 22.39px);
   color: color.$main-text-gray-color;
   padding: 3% 10%;
+
+  @include util.tablet-screen {
+    flex-direction: column;
+    text-align: left;
+    @include font.typo(font.$IBM, regular, 16px, 22.39px);
+  }
+
+  @include util.mobile-screen {
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    text-align: left;
+    @include font.typo(font.$IBM, regular, 13px, 22.39px);
+    padding-bottom: 30px;
+  }
+}
+
+.FooterLeft {
+  @include util.tablet-screen {
+    width: 100%;
+    align-items: flex-start;
+  }
 }
 
 .LogoWrap {
-  width: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  margin-right: 20px;
+
   .SoftLabsLogo {
     width: 300px;
     height: 80px;
   }
+
   .NaverBlogLogo {
     width: 120px;
+    margin-left: 40px;
+    @include util.mobile-screen {
+      display: none;
+    }
   }
 }
 
@@ -46,10 +77,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include util.tablet-screen {
+    width: 100%;
+  }
+  @include util.mobile-screen {
+    width: 291px;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
 }
 
 .ContactLeft {
   width: 271.36px;
+  margin-right: 5%;
+
+  @include util.tablet-screen {
+    width: 248px;
+    margin-right: 20px;
+  }
+
+  @include util.mobile-screen {
+    width: 291px;
+  }
 
   & li {
     margin-top: 10px;
@@ -58,12 +109,22 @@
     justify-content: space-between;
     & span:first-of-type {
       width: 72px;
+      @include util.tablet-screen {
+        width: 64px;
+      }
     }
   }
 }
 
 .ContactRight {
   width: 350px;
+  @include util.tablet-screen {
+    width: 316.5px;
+  }
+
+  @include util.mobile-screen {
+    width: 291px;
+  }
 
   & li {
     margin-top: 10px;
@@ -73,6 +134,9 @@
 
     & span:first-of-type {
       width: 115px;
+      @include util.tablet-screen {
+        width: 102px;
+      }
     }
   }
 }

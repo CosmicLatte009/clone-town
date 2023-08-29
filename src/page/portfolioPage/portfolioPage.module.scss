@@ -53,3 +53,57 @@
     }
   }
 }
+
+@media (min-width: 531px) and (max-width: 1200px) {
+  .portfolio_tap {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      margin: 100px auto;
+      li {
+        margin: 0 30px;
+      }
+    }
+  }
+  .portfolio_container {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media (max-width: 530px) {
+  .portfolio {
+    left: 0;
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .portfolio {
+    margin-bottom: 150px;
+    overflow: hidden;
+
+    h2.portfolio_title {
+      font-size: 3.2rem;
+    }
+  }
+
+  .portfolio_tap {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 100px 0;
+      li {
+        margin: 0 10px;
+        span {
+          button {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
