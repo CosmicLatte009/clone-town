@@ -1,7 +1,7 @@
-import styles from './MainStorySection.module.scss';
+import styles from './Section5.module.scss';
 import MainStoryCard from './MainStoryCard';
 
-const MainStorySection = () => {
+const Section5 = () => {
   return (
     <section className={styles.Container}>
       <div className={styles.BackgroundImg}>
@@ -20,4 +20,4 @@ const MainStorySection = () => {
     </section>
   );
 };
-export default MainStorySection;
+export default Section5;

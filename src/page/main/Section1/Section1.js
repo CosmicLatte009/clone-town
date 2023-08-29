@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import styles from './MainBannerSection.module.scss';
+import styles from './Section1.module.scss';
 import datas from '../../../dummy/main-data/main-banner.json';
 
-const MainBannerTitle = () => {
+const Section1 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const bannerData = datas.data;
@@ -64,4 +64,4 @@ const MainBannerTitle = () => {
   );
 };
 
-export default MainBannerTitle;
+export default Section1;
