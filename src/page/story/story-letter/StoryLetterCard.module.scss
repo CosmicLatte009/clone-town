@@ -25,7 +25,9 @@
   }
 
   & img {
+    display: block;
     width: 100%;
+    height: auto;
     object-fit: cover;
     transition: opacity 0.4s;
   }
@@ -35,6 +37,10 @@
   }
   color: #ffffff;
   word-break: keep-all;
+
+  @include util.mobile-screen {
+    margin: 10% 20px;
+  }
 }
 
 .Text {
