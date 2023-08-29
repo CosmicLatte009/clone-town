@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "img": "/assets/img/portfolioPage/company/ozrp.png",
+      "Summary": "",
+      "name": "오지랖",
+      "color": ["#3E22F5", "#fff"],
+      "url": "",
+      "tag": [
+        "window 실행파일",
+        "관리자 웹",
+        "IT 솔루션",
+        "네이티브 앱",
+        "IT서비스",
+        "시스템개발"
+      ]
+    },
+    {
+      "img": "/assets/img/portfolioPage/company/nirvana.jpg",
+      "Summary": "특허받은 세계 최초 귀마사지기",
+      "name": "NIRVANA 니르바나",
+      "color": ["#1F2322", "#A4745F", "#F6C7B8"],
+      "url": "https://play.google.com/store/apps/details?id=com.nirvana&pli=1",
+      "tag": ["네이티브 앱", "뷰티/헬스", "귀마사지기"]
+    }
+  ]
+}
